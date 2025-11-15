@@ -90,6 +90,16 @@
             bindings = <&SQ>;
             key-positions = <19 31>;
         };
+
+        VBE {
+            bindings = <&VBE>;
+            key-positions = <25 26>;
+        };
+
+        AltF4 {
+            bindings = <&EndApp>;
+            key-positions = <14 17>;
+        };
     };
 
     macros {
@@ -337,6 +347,34 @@
                 <&kp N0 &kp N8 &kp N6 &kp N2 &kp ENTER>;
 
             label = "EMAIL";
+        };
+
+        VBE: VBE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 50>,
+                <&kp F11>,
+                <&macro_release>,
+                <&kp F11 &kp LEFT_ALT>;
+
+            label = "VBE";
+        };
+
+        EndApp: EndApp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 50>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp F4 &kp LEFT_ALT>;
+
+            label = "ENDAPP";
         };
     };
 
