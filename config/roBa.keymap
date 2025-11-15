@@ -26,11 +26,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <38 41>;
-        };
-
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
@@ -56,14 +51,14 @@
             key-positions = <19 20>;
         };
 
-        Pgup {
-            bindings = <&kp PG_UP>;
-            key-positions = <17 18>;
+        InputoMode {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 18>;
         };
 
-        Pgdn {
-            bindings = <&kp PG_DN>;
-            key-positions = <20 21>;
+        UnderBar {
+            bindings = <&UnderScore>;
+            key-positions = <5 17>;
         };
     };
 
@@ -166,7 +161,7 @@
             label = "S7";
         };
 
-        S8: S8 {
+        LKAKKO: LKAKKO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -177,7 +172,7 @@
                 <&macro_release>,
                 <&kp N8 &kp LEFT_SHIFT>;
 
-            label = "S8";
+            label = "LKAKKO";
         };
 
         S9: S9 {
@@ -291,6 +286,28 @@
 
             label = "ASTER";
         };
+
+        Calte: Calte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp N3 &kp N7 &kp N0 &kp N8 &kp TAB>,
+                <&macro_wait_time 50>,
+                <&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp N1 &kp N2 &kp N3 &kp ENTER>;
+
+            label = "CALTE";
+        };
+
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp N3 &kp N7 &kp N0 &kp N8 &kp TAB>,
+                <&macro_wait_time 50>,
+                <&kp N0 &kp N8 &kp N6 &kp N2 &kp ENTER>;
+
+            label = "EMAIL";
+        };
     };
 
     behaviors {
@@ -356,10 +373,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                        &kp Y                 &kp U                     &kp I               &kp O                   &kp P
-&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine            &kp SINGLE_QUOTE  &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
-&kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH            &kp SEMICOLON     &kp N                 &kp M                     &mkp MB1            &mkp MB2                &lt 5 ENTER
-&lt 3 COMMA            &kp PG_UP              &kp PG_DN           &kp TAB                  &LThumbLayer 3 SPACE  &kp PRINTSCREEN      &kp K_MENU        &RThumbLayer 2 SPACE                                                                        &lt 3 PERIOD
+&kp Q                        &kp W                  &kp E               &kp R                    &kp T                                                        &kp Y                 &kp U                     &kp I               &kp O                   &kp P
+&L_MOD_TAP LEFT_WIN A        &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine            &kp SINGLE_QUOTE  &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
+&kp Z                        &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH            &kp SEMICOLON     &kp N                 &kp M                     &mkp MB1            &mkp MB2                &lt 5 ENTER
+&L_MOD_TAP LEFT_SHIFT COMMA  &kp PG_UP              &kp PG_DN           &kp TAB                  &LThumbLayer 3 SPACE  &kp PRINTSCREEN      &kp K_MENU        &RThumbLayer 2 SPACE                                                                        &R_MOD_TAP RIGHT_SHIFT PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
