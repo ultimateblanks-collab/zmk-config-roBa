@@ -76,7 +76,8 @@
                 <&kp LEFT_SHIFT>,
                 <&macro_wait_time 50>,
                 <&kp N1>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp N1 &kp LEFT_SHIFT>;
 
             label = "S1";
         };
