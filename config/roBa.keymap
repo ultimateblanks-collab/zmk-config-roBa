@@ -90,7 +90,8 @@
                 <&kp LEFT_SHIFT>,
                 <&macro_wait_time 50>,
                 <&kp N2>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp N2 &kp LEFT_SHIFT>;
 
             label = "S2";
         };
@@ -103,7 +104,8 @@
                 <&kp LEFT_SHIFT>,
                 <&macro_wait_time 50>,
                 <&kp N3>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp N3 &kp LEFT_SHIFT>;
 
             label = "S3";
         };
@@ -116,9 +118,94 @@
                 <&kp LEFT_SHIFT>,
                 <&macro_wait_time 50>,
                 <&kp N4>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp N4 &kp LEFT_SHIFT>;
 
             label = "S4";
+        };
+
+        S5: S5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N5>,
+                <&macro_release>,
+                <&kp N5 &kp LEFT_SHIFT>;
+
+            label = "S5";
+        };
+
+        S6: S6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N6>,
+                <&macro_release>,
+                <&kp N6 &kp LEFT_SHIFT>;
+
+            label = "S6";
+        };
+
+        S7: S7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N7>,
+                <&macro_release>,
+                <&kp N7 &kp LEFT_SHIFT>;
+
+            label = "S7";
+        };
+
+        S8: S8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N8>,
+                <&macro_release>,
+                <&kp N8 &kp LEFT_SHIFT>;
+
+            label = "S8";
+        };
+
+        S9: S9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp N9 &kp LEFT_SHIFT>;
+
+            label = "S9";
+        };
+
+        S0: S0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N0>,
+                <&macro_release>,
+                <&kp N0 &kp LEFT_SHIFT>;
+
+            label = "S0";
         };
     };
 
