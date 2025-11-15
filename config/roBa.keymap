@@ -97,7 +97,7 @@
         };
 
         At {
-            bindings = <&kp AT_SIGN>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <0 10>;
         };
 
