@@ -97,7 +97,7 @@
         };
 
         At {
-            bindings = <&kp LBRC>;
+            bindings = <&kp AT_SIGN>;
             key-positions = <0 10>;
         };
 
