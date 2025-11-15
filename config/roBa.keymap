@@ -96,9 +96,44 @@
             key-positions = <25 26>;
         };
 
-        AltF4 {
+        At {
+            bindings = <&kp LBRC>;
+            key-positions = <0 10>;
+        };
+
+        Plus {
+            bindings = <&Plus>;
+            key-positions = <1 11>;
+        };
+
+        Aster {
+            bindings = <&Aster>;
+            key-positions = <2 12>;
+        };
+
+        And {
+            bindings = <&And>;
+            key-positions = <3 13>;
+        };
+
+        caret {
+            bindings = <&Equal>;
+            key-positions = <4 14>;
+        };
+
+        Terminate {
             bindings = <&EndApp>;
-            key-positions = <14 17>;
+            key-positions = <16 28>;
+        };
+
+        Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <10 11>;
+        };
+
+        Ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <11 12>;
         };
     };
 
@@ -173,7 +208,7 @@
             label = "S5";
         };
 
-        S6: S6 {
+        And: And {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -184,7 +219,7 @@
                 <&macro_release>,
                 <&kp N6 &kp LEFT_SHIFT>;
 
-            label = "S6";
+            label = "AND";
         };
 
         SQ: SQ {
