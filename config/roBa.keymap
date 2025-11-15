@@ -421,6 +421,62 @@
 
             label = "ENDAPP";
         };
+
+        CtPgDn: CtPgDn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp PAGE_DOWN>,
+                <&macro_release>,
+                <&kp PAGE_DOWN &kp LCTRL>;
+
+            label = "CTPGDN";
+        };
+
+        CtPgUp: CtPgUp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp PAGE_UP>,
+                <&macro_release>,
+                <&kp PG_UP &kp LCTRL>;
+
+            label = "CTPGUP";
+        };
+
+        CtHome: CtHome {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp HOME>,
+                <&macro_release>,
+                <&kp HOME &kp LCTRL>;
+
+            label = "CTHOME";
+        };
+
+        CtEnd: CtEnd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp END>,
+                <&macro_release>,
+                <&kp END &kp LCTRL>;
+
+            label = "CTEND";
+        };
     };
 
     behaviors {
@@ -515,10 +571,10 @@
 
         ARROW {
             bindings = <
-&none   &none         &none      &none           &trans                      &trans  &trans          &kp UP          &trans           &trans
-&none   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none   &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&none   &none         &none      &none           &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans                                                   &trans
+&none   &none         &none      &none           &trans                      &trans   &CtPgUp         &kp UP          &CtPgDn          &trans
+&none   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none   &trans      &trans  &CtHome  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &CtEnd
+&none   &none         &none      &none           &trans  &trans      &trans  &trans   &trans          &trans          &trans           &trans
+&trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
