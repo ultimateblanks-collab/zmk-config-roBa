@@ -60,6 +60,36 @@
             bindings = <&UnderScore>;
             key-positions = <5 17>;
         };
+
+        L_kakko {
+            bindings = <&L_KAKKO>;
+            key-positions = <6 18>;
+        };
+
+        D_quote {
+            bindings = <&DQ>;
+            key-positions = <7 19>;
+        };
+
+        R_kakko {
+            bindings = <&R_KAKKO>;
+            key-positions = <8 20>;
+        };
+
+        LB {
+            bindings = <&kp RBKT>;
+            key-positions = <18 30>;
+        };
+
+        RB {
+            bindings = <&kp NUHS>;
+            key-positions = <20 32>;
+        };
+
+        SingleQ {
+            bindings = <&SQ>;
+            key-positions = <19 31>;
+        };
     };
 
     macros {
@@ -77,7 +107,7 @@
             label = "S1";
         };
 
-        S2: S2 {
+        DQ: DQ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -88,7 +118,7 @@
                 <&macro_release>,
                 <&kp N2 &kp LEFT_SHIFT>;
 
-            label = "S2";
+            label = "DQ";
         };
 
         S3: S3 {
@@ -147,7 +177,7 @@
             label = "S6";
         };
 
-        S7: S7 {
+        SQ: SQ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -158,10 +188,10 @@
                 <&macro_release>,
                 <&kp N7 &kp LEFT_SHIFT>;
 
-            label = "S7";
+            label = "SQ";
         };
 
-        LKAKKO: LKAKKO {
+        L_KAKKO: L_KAKKO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -172,10 +202,10 @@
                 <&macro_release>,
                 <&kp N8 &kp LEFT_SHIFT>;
 
-            label = "LKAKKO";
+            label = "L_KAKKO";
         };
 
-        S9: S9 {
+        R_KAKKO: R_KAKKO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -186,7 +216,7 @@
                 <&macro_release>,
                 <&kp N9 &kp LEFT_SHIFT>;
 
-            label = "S9";
+            label = "R_KAKKO";
         };
 
         S0: S0 {
@@ -373,10 +403,10 @@
 
         default_layer {
             bindings = <
-&kp Q                        &kp W                  &kp E               &kp R                    &kp T                                                        &kp Y                 &kp U                     &kp I               &kp O                   &kp P
-&L_MOD_TAP LEFT_WIN A        &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine            &kp SINGLE_QUOTE  &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
-&kp Z                        &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH            &kp SEMICOLON     &kp N                 &kp M                     &mkp MB1            &mkp MB2                &lt 5 ENTER
-&L_MOD_TAP LEFT_SHIFT COMMA  &kp PG_UP              &kp PG_DN           &kp TAB                  &LThumbLayer 3 SPACE  &kp PRINTSCREEN      &kp K_MENU        &RThumbLayer 2 SPACE                                                                        &R_MOD_TAP RIGHT_SHIFT PERIOD
+&kp Q                        &kp W                  &kp E               &kp R                    &kp T                                                         &kp Y                 &kp U                     &kp I               &kp O                   &kp P
+&L_MOD_TAP LEFT_WIN A        &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine            &kp SINGLE_QUOTE   &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
+&kp Z                        &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH            &kp SEMICOLON      &kp N                 &kp M                     &mkp MB1            &mkp MB2                &lt 5 ENTER
+&L_MOD_TAP LEFT_SHIFT COMMA  &kp PG_UP              &kp PG_DN           &kp TAB                  &LThumbLayer 3 SPACE  &kp PRINTSCREEN      &kp K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &R_MOD_TAP RIGHT_SHIFT PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
