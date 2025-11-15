@@ -250,7 +250,21 @@
             label = "EQUAL";
         };
 
-        Coron: Coron {
+        Tilde: Tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp EQUAL>,
+                <&macro_release>,
+                <&kp EQUAL &kp LEFT_SHIFT>;
+
+            label = "TILDE";
+        };
+
+        Plus: Plus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -259,9 +273,23 @@
                 <&macro_wait_time 50>,
                 <&kp SEMI>,
                 <&macro_release>,
-                <&kp SEMICOLON &kp LEFT_SHIFT>;
+                <&kp SEMI &kp LEFT_SHIFT>;
 
-            label = "CORON";
+            label = "PLUS";
+        };
+
+        Aster: Aster {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp SINGLE_QUOTE>,
+                <&macro_release>,
+                <&kp SINGLE_QUOTE &kp LEFT_SHIFT>;
+
+            label = "ASTER";
         };
     };
 
@@ -328,10 +356,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                      &kp Y                 &kp U                     &kp I               &kp O                   &kp P
-&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &kp LS(LG(S))         &S1            &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
-&kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp SINGLE_QUOTE      &kp SEMICOLON  &kp N                 &kp M                     &mkp MB1            &mkp MB2                &lt 5 ENTER
-&lt 3 COMMA            &kp PG_UP              &kp PG_DN           &kp TAB                  &LThumbLayer 3 SPACE  &kp PRINTSCREEN       &kp K_MENU     &RThumbLayer 2 SPACE                                                                        &lt 3 PERIOD
+&kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                        &kp Y                 &kp U                     &kp I               &kp O                   &kp P
+&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine            &kp SINGLE_QUOTE  &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
+&kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH            &kp SEMICOLON     &kp N                 &kp M                     &mkp MB1            &mkp MB2                &lt 5 ENTER
+&lt 3 COMMA            &kp PG_UP              &kp PG_DN           &kp TAB                  &LThumbLayer 3 SPACE  &kp PRINTSCREEN      &kp K_MENU        &RThumbLayer 2 SPACE                                                                        &lt 3 PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
