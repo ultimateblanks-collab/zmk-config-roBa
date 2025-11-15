@@ -135,10 +135,20 @@
             bindings = <&kp LCTRL>;
             key-positions = <11 12>;
         };
+
+        Sharp {
+            bindings = <&Sharp>;
+            key-positions = <11 23>;
+        };
+
+        Percent {
+            bindings = <&Percent>;
+            key-positions = <12 24>;
+        };
     };
 
     macros {
-        S1: S1 {
+        exclamation: exclamation {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -149,7 +159,7 @@
                 <&macro_release>,
                 <&kp N1 &kp LEFT_SHIFT>;
 
-            label = "S1";
+            label = "EXCLAMATION";
         };
 
         DQ: DQ {
@@ -166,7 +176,7 @@
             label = "DQ";
         };
 
-        S3: S3 {
+        Sharp: Sharp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -177,10 +187,10 @@
                 <&macro_release>,
                 <&kp N3 &kp LEFT_SHIFT>;
 
-            label = "S3";
+            label = "SHARP";
         };
 
-        S4: S4 {
+        Dollar: Dollar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -191,10 +201,10 @@
                 <&macro_release>,
                 <&kp N4 &kp LEFT_SHIFT>;
 
-            label = "S4";
+            label = "DOLLAR";
         };
 
-        S5: S5 {
+        Percent: Percent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -205,7 +215,7 @@
                 <&macro_release>,
                 <&kp N5 &kp LEFT_SHIFT>;
 
-            label = "S5";
+            label = "PERCENT";
         };
 
         And: And {
