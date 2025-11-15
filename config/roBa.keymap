@@ -26,29 +26,44 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        Shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <38 41>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        BS {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+        Delete {
+            bindings = <&kp DEL>;
+            key-positions = <7 8>;
+        };
+
+        Home {
+            bindings = <&kp HOME>;
+            key-positions = <18 19>;
+        };
+
+        End {
+            bindings = <&kp END>;
+            key-positions = <19 20>;
+        };
+
+        Pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <17 18>;
+        };
+
+        Pgdn {
+            bindings = <&kp PG_DN>;
             key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
     };
 
@@ -99,7 +114,7 @@
 &kp Q                  &kp W                  &kp E               &kp R                    &kp T                                          &kp Y        &kp U                     &kp I               &kp O                   &kp P
 &L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G        &kp LS(LG(S))      &kp SLASH      &kp H        &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
 &kp Z                  &kp X                  &kp C               &kp V                    &kp B        &kp COLON          &kp SEMICOLON  &kp N        &kp M                     &mkp MB1            &mkp MB2                &lt 5 ENTER
-&lt 3 COMMA            &kp LEFT_WIN           &kp LEFT_ALT        &none                    &lt 2 SPACE  &none              &kp BACKSPACE  &lt 1 SPACE                                                                        &lt 3 PERIOD
+&lt 3 COMMA            &kp LEFT_WIN           &kp LEFT_ALT        &kp TAB                  &lt 3 SPACE  &none              &kp BACKSPACE  &lt 2 SPACE                                                                        &lt 3 PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
