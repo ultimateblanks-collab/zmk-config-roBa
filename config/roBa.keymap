@@ -116,7 +116,7 @@
             key-positions = <3 13>;
         };
 
-        caret {
+        equal {
             bindings = <&Equal>;
             key-positions = <4 14>;
         };
@@ -141,8 +141,8 @@
             key-positions = <11 23>;
         };
 
-        Percent {
-            bindings = <&Percent>;
+        dollar {
+            bindings = <&Dollar>;
             key-positions = <12 24>;
         };
 
@@ -170,6 +170,26 @@
         L5 {
             bindings = <&mo 5>;
             key-positions = <30 31 32>;
+        };
+
+        caret {
+            bindings = <&kp EQUAL>;
+            key-positions = <14 26>;
+        };
+
+        percent {
+            bindings = <&Percent>;
+            key-positions = <13 25>;
+        };
+
+        copy {
+            bindings = <&copy>;
+            key-positions = <23 24>;
+        };
+
+        paste {
+            bindings = <&paste>;
+            key-positions = <24 25>;
         };
     };
 
@@ -503,6 +523,34 @@
 
             label = "CTEND";
         };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp C &kp LCTRL>;
+
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp V &kp LCTRL>;
+
+            label = "PASTE";
+        };
     };
 
     behaviors {
@@ -568,10 +616,10 @@
 
         default_layer {
             bindings = <
-&kp Q                        &kp W                  &kp E               &kp R                    &kp T                                                                                              &kp Y                 &kp U                     &kp I               &kp O                   &kp P
-&L_MOD_TAP LEFT_WIN A        &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine                              &kp SINGLE_QUOTE                      &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
-&kp Z                        &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH                              &kp SEMICOLON                         &kp N                 &kp M                     &kp COMMA           &kp PERIOD              &kp ENTER
-&L_MOD_TAP LEFT_SHIFT COMMA  &kp PG_UP              &kp PG_DN           &kp TAB                  &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &R_MOD_TAP RIGHT_SHIFT PERIOD
+&kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                                                              &kp Y                 &kp U                     &kp I               &kp O                   &kp P
+&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &kp INT_YEN                            &kp SINGLE_QUOTE                      &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
+&kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH                              &kp SEMICOLON                         &kp N                 &kp M                     &lt 5 COMMA         &kp PERIOD              &kp ENTER
+&PipeLine              &kp PG_UP              &kp PG_DN           &LThumbLayer 5 TAB       &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &UnderScore
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
