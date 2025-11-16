@@ -57,7 +57,7 @@
         };
 
         UnderBar {
-            bindings = <&UnderScore>;
+            bindings = <&kp INT_YEN>;
             key-positions = <5 17>;
         };
 
@@ -190,6 +190,16 @@
         paste {
             bindings = <&paste>;
             key-positions = <24 25>;
+        };
+
+        underscore {
+            bindings = <&UnderScore>;
+            key-positions = <17 29>;
+        };
+
+        C_BS {
+            bindings = <&ctrlBS>;
+            key-positions = <6 7>;
         };
     };
 
@@ -551,6 +561,20 @@
 
             label = "PASTE";
         };
+
+        ctrlBS: ctrlBS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp BACKSPACE &kp LCTRL>;
+
+            label = "CTRLBS";
+        };
     };
 
     behaviors {
@@ -617,9 +641,9 @@
         default_layer {
             bindings = <
 &kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                                                              &kp Y                 &kp U                     &kp I               &kp O                   &kp P
-&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &kp INT_YEN                            &kp SINGLE_QUOTE                      &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
-&kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH                              &kp SEMICOLON                         &kp N                 &kp M                     &lt 5 COMMA         &kp PERIOD              &kp ENTER
-&PipeLine              &kp PG_UP              &kp PG_DN           &LThumbLayer 5 TAB       &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &UnderScore
+&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &kp F5                                 &kp SINGLE_QUOTE                      &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
+&kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp F8                                 &kp SEMICOLON                         &kp N                 &kp M                     &lt 5 COMMA         &kp PERIOD              &kp ENTER
+&PipeLine              &kp PG_UP              &kp PG_DN           &LThumbLayer 5 TAB       &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -647,7 +671,7 @@
             bindings = <
 &none   &none         &none      &none           &trans                      &trans   &CtPgUp         &kp UP          &CtPgDn          &trans
 &none   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none   &trans      &trans  &CtHome  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &CtEnd
-&none   &none         &none      &none           &trans  &trans      &trans  &trans   &trans          &trans          &trans           &trans
+&none   &none         &none      &none           &trans  &trans      &trans  &trans   &none           &none           &trans           &trans
 &trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans                                                    &trans
             >;
 
