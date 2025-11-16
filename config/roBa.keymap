@@ -149,6 +149,7 @@
         sl5 {
             bindings = <&sl 5>;
             key-positions = <31 32>;
+            timeout-ms = <10000>;
         };
     };
 
