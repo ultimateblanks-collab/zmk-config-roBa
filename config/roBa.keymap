@@ -125,12 +125,12 @@
             key-positions = <16 28>;
         };
 
-        Alt {
+        alt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <10 11>;
         };
 
-        Ctrl {
+        ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <11 12>;
         };
@@ -181,12 +181,12 @@
             key-positions = <13 25>;
         };
 
-        Ctrl_PageUp {
+        ctpgup {
             bindings = <&CtPgUp>;
             key-positions = <23 24>;
         };
 
-        Ctrl_PageDown {
+        ctpgdn {
             bindings = <&CtPgDn>;
             key-positions = <24 25>;
         };
@@ -206,8 +206,8 @@
             key-positions = <12 13>;
         };
 
-        shift_tab {
-            bindings = <&shift_tab>;
+        retab {
+            bindings = <&shifttab>;
             key-positions = <13 14>;
         };
     };
@@ -543,34 +543,6 @@
             label = "CTEND";
         };
 
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp C>,
-                <&macro_release>,
-                <&kp C &kp LCTRL>;
-
-            label = "COPY";
-        };
-
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp V>,
-                <&macro_release>,
-                <&kp V &kp LCTRL>;
-
-            label = "PASTE";
-        };
-
         ctrlBS: ctrlBS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -585,7 +557,7 @@
             label = "CTRLBS";
         };
 
-        shift_tab: shift_tab {
+        shifttab: shift_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
