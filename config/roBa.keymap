@@ -41,12 +41,12 @@
             key-positions = <7 8>;
         };
 
-        Home {
+        MB1 {
             bindings = <&mkp MB1>;
             key-positions = <18 19>;
         };
 
-        End {
+        MB2 {
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
         };
@@ -182,13 +182,13 @@
             key-positions = <13 25>;
         };
 
-        copy {
-            bindings = <&copy>;
+        PageUp {
+            bindings = <&CtPgUp>;
             key-positions = <23 24>;
         };
 
-        paste {
-            bindings = <&paste>;
+        PageDown {
+            bindings = <&CtPgDn>;
             key-positions = <24 25>;
         };
 
