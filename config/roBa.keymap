@@ -212,8 +212,8 @@
         };
 
         OneShotMOD {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <38 41>;
+            bindings = <&stickMOD LEFT_SHIFT>;
+            key-positions = <41 37>;
         };
     };
 
@@ -632,6 +632,16 @@
             flavor = "balanced";
             hold-trigger-key-positions = <23 0 1 2 3 4 10 11 12 13 14 15 22 24 25 26 27 34 35 36 37 38 39>;
             hold-trigger-on-release;
+        };
+
+        stickMOD: stickMOD {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKMOD";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1500>;
+            quick-release;
+            ignore-modifiers;
         };
     };
 
