@@ -210,6 +210,11 @@
             bindings = <&shifttab>;
             key-positions = <13 14>;
         };
+
+        OneShotMOD {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <38 41>;
+        };
     };
 
     macros {
