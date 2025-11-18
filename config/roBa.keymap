@@ -7,7 +7,7 @@ num_word_num: num_word {
     continue-list = <BSPC DEL DOT COMMA F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12>;
 };
 
-/&num_word_num 2
+//&num_word_num 2
 
 &trackball {
     // automouse-layer = <4>;
