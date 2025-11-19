@@ -32,7 +32,7 @@
 
         BS {
             bindings = <&kp BACKSPACE>;
-            key-positions = <17 18>;
+            key-positions = <6 7>;
         };
 
         Delete {
@@ -198,7 +198,7 @@
 
         C_BS {
             bindings = <&ctrlBS>;
-            key-positions = <6 7>;
+            key-positions = <17 18>;
         };
 
         tab {
