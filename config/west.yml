@@ -5,7 +5,7 @@ manifest:
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
     - name: urob
-      url-base: https://github.com/urob
+      url-base: https://github.com/ultimateblank-collab
   projects:
     - name: zmk
       remote: zmkfirmware
