@@ -15,7 +15,7 @@ manifest:
       remote: kumamuk-git
       revision: main
     - name: zmk-auto-layer
-      remote: urob
+      remote: ultimateblanks-collab
       revision: main
       clone-depth: 0
   self:
