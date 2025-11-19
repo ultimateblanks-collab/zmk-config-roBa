@@ -655,6 +655,20 @@
             #binding-cells = <0>;
             continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z UNDERSCORE MINUS>;
         };
+
+        OSM: OSM {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OSM";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&stickMOD LEFT_SHIFT>;
+        };
+
+        CAPS_LOCK: CAPS_LOCK {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CAPS_LOCK";
+            #binding-cells = <0>;
+            bindings = <&PipeLine>, <&caps_word>;
+        };
     };
 
     keymap {
@@ -665,7 +679,7 @@
 &kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                                                              &kp Y                 &kp U                     &kp I               &kp O                   &kp P
 &L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &kp F5                                 &kp SINGLE_QUOTE                      &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
 &kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp F8                                 &kp SEMICOLON                         &kp N                 &kp M                     &kp COMMA           &kp PERIOD              &kp ENTER
-&PipeLine              &kp PG_UP              &kp PG_DN           &LThumbLayer 5 TAB       &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &kp SLASH
+&caps_word             &kp PG_UP              &kp PG_DN           &LThumbLayer 5 TAB       &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &OSM
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
