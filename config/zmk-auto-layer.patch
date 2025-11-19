@@ -2,21 +2,26 @@ diff --git a/src/behaviors/behavior_auto_layer.c b/src/behaviors/behavior_auto_l
 index 1234567..abcdef0 100644
 --- a/src/behaviors/behavior_auto_layer.c
 +++ b/src/behaviors/behavior_auto_layer.c
-@@ -92,7 +92,7 @@ static int activate_auto_layer(const struct device *dev)
- 
-     LOG_DBG("Activating auto layer %d", auto_layer->layer);
- 
+@@ -1,14 +1,18 @@
+-static void activate_auto_layer(struct active_auto_layer *auto_layer) {
+-#if IS_ENABLED(CONFIG_ZMK_TRACK_MOMENTARY_LAYERS)
+-    // If patch is enabled, second argument signals whether layer change momentary or not
+-    zmk_keymap_layer_activate(auto_layer->layer, false);
+-#else
 -    zmk_keymap_layer_activate(auto_layer->layer);
-+    zmk_keymap_layer_activate(auto_layer->layer, true);
- 
-     return ZMK_BEHAVIOR_OPAQUE;
- }
-@@ -108,7 +108,7 @@ static int deactivate_auto_layer(const struct device *dev)
- 
-     LOG_DBG("Deactivating auto layer %d", auto_layer->layer);
- 
+-#endif // IS_ENABLED(CONFIG_ZMK_TRACK_MOMENTARY_LAYERS)
+-}
+-
+-static void deactivate_auto_layer(struct active_auto_layer *auto_layer) {
 -    zmk_keymap_layer_deactivate(auto_layer->layer);
+-    auto_layer->is_active = false;
++static void activate_auto_layer(struct active_auto_layer *auto_layer) {
++    // ZMK 0.7+ API: 第二引数が必須
++    zmk_keymap_layer_activate(auto_layer->layer, false);
++    auto_layer->is_active = true;
++}
++
++static void deactivate_auto_layer(struct active_auto_layer *auto_layer) {
 +    zmk_keymap_layer_deactivate(auto_layer->layer, false);
- 
-     return ZMK_BEHAVIOR_OPAQUE;
++    auto_layer->is_active = false;
  }
