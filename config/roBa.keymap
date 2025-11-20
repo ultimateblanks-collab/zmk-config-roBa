@@ -695,10 +695,10 @@
 
         NUM {
             bindings = <
-&none   &shifttab  &kp ENTER  &kp TAB  &none                                   &none       &none                     &func_word 2  &none   &none
-&kp N1  &kp N2     &kp N3     &kp N4   &kp N5   &kp KP_PLUS      &kp KP_MINUS  &kp N6      &R_MOD_TAP N7 LEFT_SHIFT  &kp N8      &kp N9  &kp N0
-&kp F1  &kp F2     &kp F3     &kp F4   &kp F5   &kp SLASH        &kp ASTERISK  &kp F6      &kp F7                    &kp F8      &kp F9  &kp F10
-&trans  &trans     &trans     &kp F11  &kp F12  &trans           &trans        &kp PERIOD                                                &kp PERIOD
+&none   &shifttab  &kp ENTER  &kp TAB  &none                                   &none       &kp LEFT_SHIFT  &func_word 2  &none   &none
+&kp N1  &kp N2     &kp N3     &kp N4   &kp N5   &kp KP_PLUS      &kp KP_MINUS  &kp N6      &kp N7          &kp N8        &kp N9  &kp N0
+&kp F1  &kp F2     &kp F3     &kp F4   &kp F5   &kp SLASH        &kp ASTERISK  &kp F6      &kp F7          &kp F8        &kp F9  &kp F10
+&trans  &trans     &trans     &kp F11  &kp F12  &trans           &trans        &kp PERIOD                                        &kp PERIOD
             >;
         };
 
@@ -706,7 +706,7 @@
             bindings = <
 &none   &none         &none      &none           &trans                      &trans   &CtPgUp         &kp UP          &CtPgDn          &trans
 &none   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none   &trans      &trans  &CtHome  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &CtEnd
-&none   &none         &none      &none           &trans  &trans      &trans  &trans   &none           &nav_word 3           &trans           &trans
+&none   &none         &none      &none           &trans  &trans      &trans  &trans   &none           &nav_word 3     &trans           &trans
 &trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans                                                    &trans
             >;
 
