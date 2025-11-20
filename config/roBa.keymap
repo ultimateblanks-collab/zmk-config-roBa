@@ -196,16 +196,6 @@
             bindings = <&shifttab>;
             key-positions = <13 14>;
         };
-
-        OneShotMOD {
-            bindings = <&stickMOD LEFT_SHIFT>;
-            key-positions = <41 37>;
-        };
-
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <38 41>;
-        };
     };
 
     macros {
