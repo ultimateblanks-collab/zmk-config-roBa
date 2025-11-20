@@ -168,7 +168,7 @@
         };
 
         NAVW {
-            bindings = <&nav_word>;
+            bindings = <&nav_word 3>;
             key-positions = <18 19 20>;
         };
 
