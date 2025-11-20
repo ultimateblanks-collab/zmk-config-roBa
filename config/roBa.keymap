@@ -657,7 +657,9 @@
             continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z UNDERSCORE MINUS>;
         };
     };
-
+&num_word {
+  continue-list = <BSPC DEL DOT COMMA F10>;
+};
     keymap {
         compatible = "zmk,keymap";
 
