@@ -201,6 +201,16 @@
             bindings = <&func_word 2>;
             key-positions = <11 12 13>;
         };
+
+        HoldMod {
+            bindings = <&stickMOD LEFT_SHIFT>;
+            key-positions = <6 7 8>;
+        };
+
+        CapsWord {
+            bindings = <&caps_word>;
+            key-positions = <3 2 1>;
+        };
     };
 
     macros {
