@@ -669,12 +669,13 @@
 &PipeLine              &kp PG_UP              &num_word 2           &LThumbLayer 5 TAB       &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &kp SLASH
             >;
 
-           &num_word {
-  continue-list = <BSPC DEL DOT COMMA F10>;
-};
-
+           
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
+&num_word {
+  continue-list = <BSPC DEL DOT COMMA F10>;
+};
+};
 
         FUNCTION {
             bindings = <
