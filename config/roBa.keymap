@@ -198,7 +198,7 @@
         };
 
         NUMW {
-            bindings = <&func_word>;
+            bindings = <&func_word 2>;
             key-positions = <11 12 13>;
         };
     };
