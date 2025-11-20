@@ -167,8 +167,8 @@
             key-positions = <6 8>;
         };
 
-        L5 {
-            bindings = <&mo 5>;
+        NAVW {
+            bindings = <&nav_word>;
             key-positions = <18 19 20>;
         };
 
@@ -195,6 +195,11 @@
         retab {
             bindings = <&shifttab>;
             key-positions = <13 14>;
+        };
+
+        NUMW {
+            bindings = <&func_word>;
+            key-positions = <11 12 13>;
         };
     };
 
