@@ -706,7 +706,7 @@
             bindings = <
 &none   &none         &none      &none           &trans                      &trans   &CtPgUp         &kp UP          &CtPgDn          &trans
 &none   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none   &trans      &trans  &CtHome  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &CtEnd
-&none   &none         &none      &none           &trans  &trans      &trans  &trans   &none           &nav_word 3     &trans           &trans
+&none   &none         &none      &none           &trans  &trans      &trans  &trans   &kp HOME        &nav_word 3     &kp END          &trans
 &trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans                                                    &trans
             >;
 
