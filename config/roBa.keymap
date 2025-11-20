@@ -667,14 +667,9 @@
 &L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &kp F5                                 &kp SINGLE_QUOTE                      &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
 &kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp F8                                 &kp SEMICOLON                         &kp N                 &kp M                     &kp COMMA           &kp PERIOD              &kp ENTER
 &PipeLine              &kp PG_UP              &num_word 2           &LThumbLayer 5 TAB       &LThumbLayer 3 SPACE  &L_MOD_TAP LEFT_SHIFT PRINTSCREEN      &R_MOD_TAP RIGHT_SHIFT K_APPLICATION  &RThumbLayer 2 SPACE                                                                        &kp SLASH
-            >;
-
-           
+            >;           
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
     };
-
-    
-};
 
         FUNCTION {
             bindings = <
