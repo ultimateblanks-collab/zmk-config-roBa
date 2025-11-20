@@ -678,7 +678,7 @@
 &kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                        &kp Y                 &kp U                     &kp I               &kp O                   &kp P
 &L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine       &kp SINGLE_QUOTE       &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
 &kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH       &kp SEMICOLON          &kp N                 &kp M                     &kp COMMA           &kp PERIOD              &lt 5 ENTER
-&kp HOME               &switcher              &kp K_APP           &LThumbLayer 3 PG_UP     &LThumbLayer 5 PG_DN  &caps_word      &stickMOD RIGHT_SHIFT  &RThumbLayer 2 SPACE                                                                        &kp END
+&kp HOME               &kp PRINTSCREEN        &kp K_APP           &LThumbLayer 3 PG_UP     &LThumbLayer 5 PG_DN  &caps_word      &stickMOD RIGHT_SHIFT  &RThumbLayer 2 SPACE                                                                        &kp END
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -695,10 +695,10 @@
 
         NUM {
             bindings = <
-&none   &none   &none   &none    &none                                   &none   &none   &none   &none   &none
-&kp N1  &kp N2  &kp N3  &kp N4   &kp N5   &kp KP_PLUS      &kp KP_MINUS  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp SLASH        &kp ASTERISK  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &kp F11  &kp F12  &trans           &trans        &trans                          &kp PIPE
+&none   &shifttab  &kp ENTER  &kp TAB  &none                                   &none       &none                     &func_word  &none   &none
+&kp N1  &kp N2     &kp N3     &kp N4   &kp N5   &kp KP_PLUS      &kp KP_MINUS  &kp N6      &R_MOD_TAP N7 LEFT_SHIFT  &kp N8      &kp N9  &kp N0
+&kp F1  &kp F2     &kp F3     &kp F4   &kp F5   &kp SLASH        &kp ASTERISK  &kp F6      &kp F7                    &kp F8      &kp F9  &kp F10
+&trans  &trans     &trans     &kp F11  &kp F12  &trans           &trans        &kp PERIOD                                                &kp PERIOD
             >;
         };
 
