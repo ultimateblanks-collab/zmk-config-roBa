@@ -201,6 +201,16 @@
             bindings = <&caps_word>;
             key-positions = <3 2 1>;
         };
+
+        copy {
+            bindings = <&copy>;
+            key-positions = <23 24>;
+        };
+
+        paste {
+            bindings = <&paste>;
+            key-positions = <24 25>;
+        };
     };
 
     macros {
@@ -562,22 +572,32 @@
             label = "SHIFT_TAB";
         };
 
-        switcher: switcher {
+        copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&sk LALT>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp C>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp C &kp LCTRL>;
 
-            label = "SWITCHER";
-            tap-ms = <40>;
-            wait-ms = <100>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp V &kp LCTRL>;
+
+            label = "PASTE";
         };
     };
 
@@ -707,7 +727,7 @@
 &none   &none         &none      &none           &trans                      &trans   &CtPgUp         &kp UP          &CtPgDn          &trans
 &none   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none   &trans      &trans  &CtHome  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &CtEnd
 &none   &none         &none      &none           &trans  &trans      &trans  &trans   &kp HOME        &nav_word 3     &kp END          &trans
-&trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans                                                    &trans
+&trans  &trans        &trans     &trans          &trans  &trans      &email  &Calte                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
