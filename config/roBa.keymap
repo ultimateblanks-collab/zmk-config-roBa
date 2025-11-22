@@ -136,17 +136,6 @@
             key-positions = <12 24>;
         };
 
-        end {
-            bindings = <&kp END>;
-            key-positions = <29 30>;
-            timeout-ms = <10000>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <17 18>;
-        };
-
         m4 {
             bindings = <&mkp MB4>;
             key-positions = <18 20>;
@@ -184,7 +173,7 @@
 
         retab {
             bindings = <&shifttab>;
-            key-positions = <13 12>;
+            key-positions = <11 12>;
         };
 
         NUMW {
@@ -210,6 +199,11 @@
         paste {
             bindings = <&paste>;
             key-positions = <24 25>;
+        };
+
+        CBS {
+            bindings = <&ctrlBS>;
+            key-positions = <30 31>;
         };
     };
 
