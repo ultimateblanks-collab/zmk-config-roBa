@@ -205,6 +205,11 @@
             bindings = <&ctrlBS>;
             key-positions = <30 31>;
         };
+
+        pipeline {
+            bindings = <&PipeLine>;
+            key-positions = <9 21>;
+        };
     };
 
     macros {
@@ -695,7 +700,7 @@
 &kp HOME               &kp PRINTSCREEN        &kp K_APP           &LThumbLayer 3 PG_UP     &LThumbLayer 5 PG_DN  &kp LCTRL      &kp LEFT_ALT      &RThumbLayer 2 SPACE                                                                        &kp END
             >;
 
-            sensor-bindings = <&inc_dec_kp TAB ESC>;
+            sensor-bindings = <&inc_dec_kp ESCAPE TAB>;
         };
 
         FUNCTION {
