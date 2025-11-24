@@ -690,12 +690,12 @@
         default_layer {
             bindings = <
 &kp Q                  &kp W                  &kp E               &kp R                    &kp T                                                  &kp Y                 &kp U                     &kp I               &kp O                   &kp P
-&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &PipeLine      &kp SINGLE_QUOTE  &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
+&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G                 &kp ENTER      &kp SINGLE_QUOTE  &kp H                 &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
 &kp Z                  &kp X                  &kp C               &kp V                    &kp B                 &kp SLASH      &kp SEMICOLON     &kp N                 &kp M                     &lt 5 COMMA         &kp PERIOD              &lt 5 ENTER
 &kp HOME               &kp PRINTSCREEN        &kp K_APP           &LThumbLayer 3 PG_UP     &LThumbLayer 5 PG_DN  &kp LCTRL      &kp LEFT_ALT      &RThumbLayer 2 SPACE                                                                        &kp END
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp TAB ESC>;
         };
 
         FUNCTION {
