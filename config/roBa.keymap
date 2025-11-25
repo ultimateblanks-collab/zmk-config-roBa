@@ -183,12 +183,12 @@
 
         HoldMod {
             bindings = <&stickMOD LEFT_SHIFT>;
-            key-positions = <6 7 8>;
+            key-positions = <30 31 32>;
         };
 
         CapsWord {
             bindings = <&caps_word>;
-            key-positions = <3 2 1>;
+            key-positions = <23 24 25>;
         };
 
         copy {
@@ -209,6 +209,11 @@
         pipeline {
             bindings = <&PipeLine>;
             key-positions = <9 21>;
+        };
+
+        mc {
+            bindings = <&mkp MB3>;
+            key-positions = <30 32>;
         };
     };
 
