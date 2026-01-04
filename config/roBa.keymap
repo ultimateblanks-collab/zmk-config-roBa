@@ -1,22 +1,18 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 1 350>;
-};
+
+&mkp_input_listener { input-processors = <&zip_temp_layer 1 350>; };
+
 &trackball {
     //  automouse-layer = <4>;
     //  scroll-layers = <5>;
 
     arrows {
         layers = <3>;
-        bindings =
-            <&altesc>,
-            <&saltesc>,
-            <&ctpgup>,
-            <&ctpgdn>;
+        bindings = <&altesc>, <&saltesc>, <&ctpgup>, <&ctpgdn>;
 
         tick = <100>;
         wait-ms = <5>;
@@ -71,6 +67,46 @@
         input {
             bindings = <&kp GRAVE>;
             key-positions = <18 13>;
+        };
+
+        yen {
+            bindings = <&kp INTERNATIONAL_3>;
+            key-positions = <17 5>;
+        };
+
+        dollar {
+            bindings = <&dollar>;
+            key-positions = <17 29>;
+        };
+
+        l_marukakko {
+            bindings = <&MML_KAKKO>;
+            key-positions = <6 18>;
+        };
+
+        dq {
+            bindings = <&dq>;
+            key-positions = <7 19>;
+        };
+
+        r_marukakko {
+            bindings = <&MMR_KAKKO>;
+            key-positions = <8 20>;
+        };
+
+        lbra {
+            bindings = <&kp RBKT>;
+            key-positions = <18 30>;
+        };
+
+        sq {
+            bindings = <&sq>;
+            key-positions = <19 31>;
+        };
+
+        rbra {
+            bindings = <&kp NUHS>;
+            key-positions = <20 32>;
         };
     };
 
