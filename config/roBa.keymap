@@ -64,6 +64,11 @@
             bindings = <&kp DELETE>;
             key-positions = <31 32>;
         };
+
+        input {
+            bindings = <&kp GRAVE>;
+            key-positions = <18 13>;
+        };
     };
 
     macros {
