@@ -124,5 +124,6 @@
     trackball: trackball@0 {
         status = "disabled";
         reg = <0>;
+        res-cpi = <1700>;
     };
 };
