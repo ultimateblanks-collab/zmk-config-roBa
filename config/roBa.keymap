@@ -69,6 +69,11 @@
             bindings = <&kp HOME>;
             key-positions = <12 11>;
         };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <13 12>;
+        };
     };
 
     macros {
