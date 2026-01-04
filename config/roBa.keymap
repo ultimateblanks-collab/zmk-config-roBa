@@ -746,7 +746,7 @@
             bindings = <&hush>, <&kp NUMBER_1>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
             keep-mods = <(MOD_RSFT)>;
         };
 
@@ -821,6 +821,15 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 34 35 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
             hold-trigger-on-release;
         };
+
+        athutt: athutt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ATHUTT";
+            bindings = <&kp LBRC>, <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -831,7 +840,7 @@
 &kp Q              &kp W              &L_LT 5 E       &kp R                &kp T                                                                     &kp Y             &kp U                 &R_LT 2 I       &kp O               &kp P
 &L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                &kp LS(LG(S))                &kp SLASH               &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &RMTwin RIGHT_WIN 0
 &kp Z              &kp X              &kp C           &kp V                &kp B                &kp COLON                    &kp SEMICOLON           &kp N             &kp M                 &semicoron      &coron              &kp SLASH
-&hussexc           &kp LEFT_WIN       &kp LEFT_ALT    &L_THUMB 3 ENTER     &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 SPACE                                                            &kp PERIOD
+&hussexc           &kp LEFT_WIN       &kp LEFT_ALT    &L_THUMB 3 ENTER     &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 SPACE                                                            &athutt
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
