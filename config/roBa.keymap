@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 &trackball {
     //  automouse-layer = <4>;
@@ -20,7 +21,9 @@
         tap-ms = <5>;
     };
 };
-
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 1 350>;
+};
 / {
     combos {
         compatible = "zmk,combos";
