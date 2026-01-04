@@ -83,6 +83,7 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
         exc: exc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -799,7 +800,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <200>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
+            hold-trigger-key-positions = <1 2 3 4 10 11 12 13 14 22 23 24 34 35 0 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
             hold-trigger-on-release;
         };
 
@@ -837,10 +838,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W                  &kp E               &kp R                    &kp T                                          &kp Y        &kp U                     &kp I               &kp O                   &kp P
-&L_MOD_TAP LEFT_WIN A  &L_MOD_TAP LEFT_ALT S  &L_MOD_TAP LCTRL D  &L_MOD_TAP LEFT_SHIFT F  &kp G        &kp LS(LG(S))      &kp SLASH      &kp H        &R_MOD_TAP RIGHT_SHIFT J  &R_MOD_TAP RCTRL K  &R_MOD_TAP RIGHT_ALT L  &R_MOD_TAP RWIN MINUS
-&kp Z                  &kp X                  &kp C               &kp V                    &kp B        &kp COLON          &kp SEMICOLON  &kp N        &kp M                     &kp COMMA           &kp PERIOD              &kp SLASH
-&kp COMMA              &kp LEFT_WIN           &kp LEFT_ALT        &none                    &lt 2 SPACE  &none              &kp ENTER      &lt 1 SPACE                                                                        &kp PERIOD
+&kp Q              &kp W              &kp E           &kp R                &kp T                                          &kp Y        &kp U                 &kp I           &kp O               &kp P
+&L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G        &kp LS(LG(S))      &kp SLASH      &kp H        &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &RMTwin RIGHT_WIN 0
+&kp Z              &kp X              &kp C           &kp V                &kp B        &kp COLON          &kp SEMICOLON  &kp N        &kp M                 &kp COMMA       &kp PERIOD          &kp SLASH
+&kp COMMA          &kp LEFT_WIN       &kp LEFT_ALT    &none                &lt 2 SPACE  &none              &kp ENTER      &lt 1 SPACE                                                            &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
