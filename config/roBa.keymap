@@ -54,6 +54,21 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <7 8>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <31 32>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <12 11>;
+        };
     };
 
     macros {
