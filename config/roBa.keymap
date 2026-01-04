@@ -825,7 +825,7 @@
         athutt: athutt {
             compatible = "zmk,behavior-mod-morph";
             label = "ATHUTT";
-            bindings = <&kp LBRC>, <&kp CARET>;
+            bindings = <&kp LBKT>, <&kp EQUAL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
