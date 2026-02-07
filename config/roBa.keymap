@@ -914,6 +914,20 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
         };
+
+        R_T_SP: R_T_SP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "R_T_SP";
+            bindings = <&kp>, <&altesc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 4 10 11 12 13 14 15 22 23 24 25 26 27 2 3>;
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -921,10 +935,10 @@
 
         default_layer {
             bindings = <
-&kp Q              &kp W              &kp E           &kp R                &kp T                                                                     &kp Y             &kp U                 &kp I           &kp O               &kp P
-&L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                &plus                        &kp SLASH               &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &RMTwin RIGHT_WIN 0
-&kp Z              &kp X              &kp C           &kp V                &kp B                &kp MINUS                    &aster                  &kp N             &kp M                 &semicoron      &coron              &kp ENTER
-&hussexc           &kp LEFT_WIN       &kp LEFT_ALT    &L_THUMB 3 ENTER     &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 SPACE                                                            &athutt
+&kp Q              &kp W              &kp E           &kp R                  &kp T                                                                    &kp Y             &kp U                 &kp I           &kp O               &kp P
+&L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F    &kp G           &plus                             &kp SLASH              &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &RMTwin RIGHT_WIN 0
+&kp Z              &kp X              &kp C           &kp V                  &kp B           &kp MINUS                         &aster                 &kp N             &kp M                 &semicoron      &coron              &kp ENTER
+&hussexc           &kp PG_UP          &kp PAGE_DOWN   &L_THUMB 3 LANGUAGE_1  &L_THUMB 4 TAB  &L_HRM LEFT_SHIFT LANGUAGE_2      &R_T_SP RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                            &athutt
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -941,10 +955,10 @@
 
         ARROW {
             bindings = <
-&none  &none  &none  &none  &none                    &none     &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &none
-&none  &none  &none  &none  &none  &none      &none  &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
-&none  &none  &none  &none  &none  &none      &none  &none     &none           &none         &none          &none
-&none  &none  &none  &none  &none  &none      &none  &none                                                  &none
+&none  &none  &none  &none  &none                    &none     &ctpgup         &kp UP_ARROW  &ctpgdn    &none
+&none  &none  &none  &none  &none  &none      &none  &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
+&none  &none  &none  &none  &none  &none      &none  &none     &none           &none         &none      &none
+&none  &none  &none  &none  &none  &none      &none  &none                                              &none
             >;
         };
 
