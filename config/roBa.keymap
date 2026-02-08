@@ -111,7 +111,7 @@
 
         altf4 {
             bindings = <&endapp>;
-            key-positions = <29 41>;
+            key-positions = <41 18>;
         };
 
         cw {
