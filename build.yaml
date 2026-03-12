@@ -18,10 +18,13 @@
 #
 ---
 include:
- - board: xiao_ble/zmk
+ - board: xiao_ble
    shield: roBa_R
+   variant: zmk
    snippet: studio-rpc-usb-uart
- - board: xiao_ble/zmk
+ - board: xiao_ble
    shield: roBa_L
- - board: xiao_ble/zmk
+   variant: zmk
+ - board: xiao_ble
+   variant: zmk
    shield: settings_reset
