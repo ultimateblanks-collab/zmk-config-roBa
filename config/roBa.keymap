@@ -29,16 +29,6 @@
             key-positions = <18 19>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
         bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
