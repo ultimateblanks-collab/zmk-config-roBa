@@ -12,7 +12,7 @@
 
     arrows {
         layers = <3>;
-        bindings = <&ctpgup>, <&ctpgdn>, <&altesc>, <&saltesc>;
+        bindings = <&ctpgdn>, <&ctpgup>, <&altesc>, <&saltesc>;
 
         tick = <100>;
         wait-ms = <5>;
