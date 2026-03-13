@@ -116,7 +116,7 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <37 40>;
+            key-positions = <41 38>;
         };
 
         sk {
@@ -137,6 +137,11 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <6 7>;
+        };
+
+        aster {
+            bindings = <&aster>;
+            key-positions = <3 13>;
         };
     };
 
@@ -922,10 +927,10 @@
 
         MOUSE {
             bindings = <
-&none  &none  &none  &none  &none                    &mkp MB4   &mkp MB1  &mo 2  &mkp MB2  &mkp MB5
-&none  &none  &none  &none  &none  &none      &none  &none      &none     &none  &none     &none
-&none  &none  &none  &none  &none  &none      &none  &none      &none     &none  &none     &none
-&none  &none  &none  &none  &none  &none      &none  &mkp MCLK                             &none
+&none  &none  &none  &none  &none                    &mkp MB4  &mkp MB1  &mo 2  &mkp MB2  &mkp MB5
+&none  &none  &none  &none  &none  &none      &none  &none     &none     &none  &none     &none
+&none  &none  &none  &none  &none  &none      &none  &none     &none     &none  &none     &none
+&none  &none  &none  &none  &none  &none      &none  &mkp MB4                             &none
             >;
         };
 
