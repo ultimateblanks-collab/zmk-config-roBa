@@ -926,10 +926,10 @@
 
         MOUSE {
             bindings = <
-&none     &none  &none  &none      &none                    &mkp MB4  &mkp MB1  &AML_LS 2 MCLK  &AML_LS 5 MB2  &mkp MB5
-&none     &none  &none  &kp LSHFT  &none  &none      &none  &none     &none     &none           &none          &none
-&none     &none  &none  &none      &none  &none      &none  &none     &none     &none           &none          &none
-&mkp MB5  &none  &none  &none      &none  &none      &none  &none                                              &mkp MB4
+&none  &none  &none  &none      &none                    &mkp MB4  &mkp MB1  &AML_LS 2 MCLK  &AML_LS 5 MB2  &mkp MB5
+&none  &none  &none  &kp LSHFT  &none  &none      &none  &none     &none     &none           &none          &none
+&none  &none  &none  &none      &none  &none      &none  &none     &none     &none           &none          &none
+&none  &none  &none  &none      &none  &none      &none  &none                                              &none
             >;
         };
 
