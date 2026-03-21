@@ -133,6 +133,26 @@
             bindings = <&aster>;
             key-positions = <3 13>;
         };
+
+        menu {
+            bindings = <&kp K_CONTEXT_MENU>;
+            key-positions = <29 30>;
+        };
+
+        scc {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <30 31>;
+        };
+
+        pageup {
+            bindings = <&kp PG_UP>;
+            key-positions = <11 12>;
+        };
+
+        pagedown {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <13 12>;
+        };
     };
 
     macros {
@@ -908,6 +928,20 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
         };
+
+        L_HRM_SP: L_HRM_SP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "L_HRM_SP";
+            bindings = <&kp>, <&stab>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 28 29 40 41 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42>;
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -915,10 +949,10 @@
 
         default_layer {
             bindings = <
-&kp Q              &kp W              &kp E           &kp R                &kp T                                                                      &kp Y             &kp U                 &kp I           &kp O               &kp P
-&L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G           &pl                          &plus                         &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RIGHT_WIN MINUS
-&kp Z              &kp X              &kp C           &kp V                &kp B           &us                          &kp MINUS                     &kp N             &kp M                 &kp COMMA       &kp PERIOD          &kp SLASH
-&kp APOS           &hussexc           &athutt         &L_THUMB 3 HOME      &L_THUMB 4 END  &L_HRM LEFT_SHIFT PG_UP      &R_HRM RIGHT_SHIFT PAGE_DOWN  &L_THUMB 2 SPACE                                                            &kp SEMI
+&kp Q              &kp W              &kp E           &kp R                &kp T                                                               &kp Y             &kp U                 &kp I           &kp O               &kp P
+&L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G           &pl                         &plus                   &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RIGHT_WIN MINUS
+&kp Z              &kp X              &kp C           &kp V                &kp B           &us                         &kp MINUS               &kp N             &kp M                 &kp COMMA       &kp PERIOD          &kp SLASH
+&kp APOS           &hussexc           &athutt         &L_THUMB 3 HOME      &L_THUMB 4 END  &L_HRM_SP LEFT_SHIFT 0      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 SPACE                                                            &kp SEMI
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
