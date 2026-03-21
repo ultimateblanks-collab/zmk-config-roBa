@@ -101,7 +101,7 @@
 
         altf4 {
             bindings = <&endapp>;
-            key-positions = <41 18>;
+            key-positions = <16 28>;
         };
 
         cw {
@@ -152,6 +152,16 @@
         pagedown {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <13 12>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <18 41>;
+        };
+
+        stab2 {
+            bindings = <&stab>;
+            key-positions = <37 13>;
         };
     };
 
