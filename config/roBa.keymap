@@ -91,7 +91,7 @@
 
         anp {
             bindings = <&anp>;
-            key-positions = <16 28>;
+            key-positions = <15 27>;
         };
 
         VBE {
