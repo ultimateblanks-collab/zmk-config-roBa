@@ -161,7 +161,7 @@
 
         stab2 {
             bindings = <&stab>;
-            key-positions = <37 13>;
+            key-positions = <41 17>;
         };
     };
 
