@@ -126,16 +126,6 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <6 7>;
-        };
-
-        menu {
-            bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <29 30>;
-        };
-
-        scc {
-            bindings = <&kp PRINTSCREEN>;
             key-positions = <30 31>;
         };
 
