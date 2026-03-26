@@ -101,7 +101,7 @@
 
         altf4 {
             bindings = <&endapp>;
-            key-positions = <16 28>;
+            key-positions = <18 41>;
         };
 
         cw {
@@ -114,24 +114,19 @@
             key-positions = <41 37>;
         };
 
-        plus {
-            bindings = <&plus>;
+        llalt {
+            bindings = <&kp LEFT_ALT>;
             key-positions = <2 3>;
         };
 
-        mins {
-            bindings = <&kp MINUS>;
+        llctl {
+            bindings = <&kp LCTRL>;
             key-positions = <1 2>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <6 7>;
-        };
-
-        aster {
-            bindings = <&aster>;
-            key-positions = <3 13>;
         };
 
         menu {
@@ -154,14 +149,9 @@
             key-positions = <13 12>;
         };
 
-        tab2 {
-            bindings = <&kp TAB>;
-            key-positions = <18 41>;
-        };
-
-        stab2 {
-            bindings = <&stab>;
-            key-positions = <41 17>;
+        aster {
+            bindings = <&aster>;
+            key-positions = <16 28>;
         };
     };
 
@@ -959,10 +949,10 @@
 
         default_layer {
             bindings = <
-&kp Q              &kp W              &kp E           &kp R                &kp T                                                               &kp Y             &kp U                 &kp I           &kp O               &kp P
-&L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G           &pl                         &plus                   &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RIGHT_WIN MINUS
-&kp Z              &kp X              &kp C           &kp V                &kp B           &us                         &kp MINUS               &kp N             &kp M                 &kp COMMA       &kp PERIOD          &kp SLASH
-&kp APOS           &hussexc           &athutt         &L_THUMB 3 HOME      &L_THUMB 4 END  &L_HRM_SP LEFT_SHIFT 0      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 SPACE                                                            &kp SEMI
+&kp Q              &kp W              &kp E           &kp R                &kp T                                                                                 &kp Y             &kp U                 &kp I           &kp O               &kp P
+&L_HRM LEFT_WIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G           &pl                                &plus                              &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RIGHT_WIN MINUS
+&kp Z              &kp X              &kp C           &kp V                &kp B           &us                                &kp MINUS                          &kp N             &kp M                 &kp COMMA       &kp PERIOD          &kp SLASH
+&kp APOS           &hussexc           &athutt         &L_THUMB 3 HOME      &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                            &kp SEMI
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -979,10 +969,10 @@
 
         ARROW {
             bindings = <
-&none         &none         &none      &none           &none                    &none     &ctpgup         &kp UP_ARROW    &ctpgdn    &none
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none  &none      &none  &kp HOME  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT  &kp END
-&none         &none         &none      &none           &none  &none      &none  &kp END   &ctpgup         &msc SCRL_DOWN  &ctpgdn    &none
-&none         &none         &none      &none           &none  &none      &none  &none                                                &none
+&none         &none         &none      &none           &none                    &none     &ctpgup         &kp UP_ARROW     &ctpgdn    &none
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none  &none      &none  &kp HOME  &kp LEFT_ARROW  &kp DOWN         &kp RIGHT  &kp END
+&none         &none         &none      &none           &none  &none      &none  &kp END   &ctpgup         &msc MOVE_Y(10)  &ctpgdn    &none
+&none         &none         &none      &none           &none  &none      &none  &none                                                 &none
             >;
         };
 
