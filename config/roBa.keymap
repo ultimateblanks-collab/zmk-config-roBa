@@ -116,12 +116,12 @@
 
         llalt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         llctl {
             bindings = <&kp LCTRL>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
         };
 
         tab {
