@@ -91,7 +91,7 @@
 
         anp {
             bindings = <&anp>;
-            key-positions = <15 27>;
+            key-positions = <3 13>;
         };
 
         VBE {
@@ -116,17 +116,17 @@
 
         llalt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <2 1>;
+            key-positions = <23 24>;
         };
 
         llctl {
             bindings = <&kp LCTRL>;
-            key-positions = <2 3>;
+            key-positions = <24 25>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <30 31>;
+            key-positions = <6 7>;
         };
 
         pageup {
@@ -141,7 +141,7 @@
 
         aster {
             bindings = <&aster>;
-            key-positions = <16 28>;
+            key-positions = <2 12>;
         };
     };
 
