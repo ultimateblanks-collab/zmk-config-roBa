@@ -24,11 +24,6 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <18 19>;
-        };
-
         bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
@@ -126,7 +121,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <6 7>;
+            key-positions = <18 19>;
         };
 
         pageup {
