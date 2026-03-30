@@ -951,7 +951,7 @@
         MOUSE {
             bindings = <
 &none  &none  &none  &none  &none                        &mkp MB4  &mkp MB1  &AML_LS 2 MCLK  &AML_LS 5 MB2  &mkp MB5
-&none  &none  &none  &none  &none  &kp LCTRL      &none  &none     &none     &none           &none          &none
+&none  &none  &none  &none  &none  &kp LCTRL      &none  &mkp MB4  &mkp MB1  &AML_LS 2 MCLK  &AML_LS 5 MB2  &mkp MB5
 &none  &none  &none  &none  &none  &kp LSHFT      &none  &mkp MB4  &mkp MB1  &AML_LS 2 MCLK  &AML_LS 5 MB2  &mkp MB5
 &none  &none  &none  &none  &none  &none          &none  &none                                              &none
             >;
