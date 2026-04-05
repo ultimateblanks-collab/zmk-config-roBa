@@ -987,10 +987,10 @@
 
         ARROW {
             bindings = <
-&none         &none         &none      &none           &none                    &none         &ctpgup         &kp UP_ARROW    &ctpgdn          &none
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none  &none      &none  &kp HOME      &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
-&none         &none         &none      &none           &none  &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LS(END)
-&none         &none         &none      &none           &none  &none      &none  &none                                                          &none
+&none  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LWIN                    &none         &ctpgup         &kp UP_ARROW    &ctpgdn          &none
+&none  &none     &none      &none      &none     &none      &none  &kp HOME      &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
+&none  &none     &none      &none      &none     &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LS(END)
+&none  &none     &none      &none      &none     &none      &none  &none                                                          &none
             >;
         };
 
