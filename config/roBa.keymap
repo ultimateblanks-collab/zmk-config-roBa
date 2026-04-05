@@ -101,12 +101,12 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <17 18>;
+            key-positions = <12 37>;
         };
 
         sk {
             bindings = <&S_key LEFT_SHIFT>;
-            key-positions = <14 13>;
+            key-positions = <13 37>;
         };
 
         llalt {
