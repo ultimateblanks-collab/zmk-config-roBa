@@ -22,6 +22,14 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+   func{
+        layers = {4};
+        bindings = 
+            <&ctpgdn>,
+            <&ctpgup>,
+            <&saltesc>,
+            <&altesc>;
+                                                                                                    
 };
 
 / {
