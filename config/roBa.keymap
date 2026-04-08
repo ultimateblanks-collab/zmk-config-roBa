@@ -29,6 +29,7 @@
             <&ctpgup>,
             <&saltesc>,
             <&altesc>;
+
         tick = <100>;
         wait-ms = <5>;
         tap-ms = <5>;
