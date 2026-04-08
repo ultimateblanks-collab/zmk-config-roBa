@@ -143,6 +143,26 @@
             bindings = <&us>;
             key-positions = <4 14>;
         };
+
+        mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <30 31>;
+        };
+
+        mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <31 32>;
+        };
+
+        mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <29 30>;
+        };
+
+        mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
@@ -913,10 +933,11 @@
         AML_LS: AML_LS {
             compatible = "zmk,behavior-hold-tap";
             label = "AML_LS";
-            bindings = <&mo>, <&mkp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <170>;
+            flavor = "balanced";
         };
 
         L_HRM_SP: L_HRM_SP {
@@ -967,10 +988,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R   &L_HRM LWIN T                                                                         &R_HRM RWIN Y     &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &kp P
-&kp A    &kp S          &kp D           &kp F            &kp G           &pl                                &plus                              &kp H             &kp J           &kp K           &kp L               &kp MINUS
-&kp Z    &kp X          &kp C           &kp V            &kp B           &kp SLASH                          &kp MINUS                          &kp N             &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
-&athutt  &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                      &hussexc
+&kp Q    &kp W          &kp E           &kp R            &kp T                                                                                 &kp Y             &kp U           &kp I            &kp O               &kp P
+&kp A    &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F   &L_HRM LWIN G   &pl                                &plus                              &R_HRM RWIN H     &R_HRM LSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &kp MINUS
+&kp Z    &kp X          &kp C           &kp V            &kp B           &kp SLASH                          &kp MINUS                          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &kp ENTER
+&athutt  &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                       &hussexc
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
