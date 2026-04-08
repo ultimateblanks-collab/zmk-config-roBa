@@ -22,7 +22,7 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
-   arrows2 {
+  /* arrows2 {
         layers = {4};
         bindings = 
             <&ctpgdn>,
@@ -33,7 +33,7 @@
         tick = <100>;
         wait-ms = <5>;
         tap-ms = <5>;
-};
+};*/
                                                                                                     
 };
 
