@@ -12,7 +12,11 @@
 
     arrows {
         layers = <3>;
-        bindings = <&kp RIGHT_ARROW>, <&kp LEFT_ARROW>, <&kp UP_ARROW>, <&kp DOWN_ARROW>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
 
         tick = <100>;
         wait-ms = <5>;
@@ -990,7 +994,7 @@
             bindings = <
 &kp Q    &kp W          &kp E           &kp R            &kp T                                                                                 &kp Y             &kp U           &kp I            &kp O               &kp P
 &kp A    &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F   &L_HRM LWIN G   &pl                                &plus                              &R_HRM RWIN H     &R_HRM LSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &kp MINUS
-&kp Z    &kp X          &kp C           &kp V            &kp B           &kp SLASH                          &kp MINUS                          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &kp ENTER
+&kp Z    &kp X          &kp C           &kp V            &kp B           &kp SLASH                          &kp MINUS                          &kp N             &kp M           &AML_LS 2 COMMA  &AML_LS 3 PERIOD    &kp ENTER
 &athutt  &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                       &hussexc
             >;
 
