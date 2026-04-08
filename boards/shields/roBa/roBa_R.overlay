@@ -17,17 +17,17 @@
             ;
 };
 
-&zip_temp_layer {
-    require-prior-idle-ms = <500>;
-    excluded-positions = <15 17 18 19 20 20 27>;
-};
+//&zip_temp_layer {
+  //  require-prior-idle-ms = <500>;
+   // excluded-positions = <15 17 18 19 20 20 27>;
+//};
 
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 1 10000>;
+       // input-processors = <&zip_temp_layer 1 10000>;
 
              scroller {
                 layers = <2>;
