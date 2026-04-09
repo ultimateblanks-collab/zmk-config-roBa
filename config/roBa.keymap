@@ -139,7 +139,7 @@
 
         pageup {
             bindings = <&kp PG_UP>;
-            key-positions = <11 12>;
+            key-positions = <2 3>;
         };
 
         pagedown {
@@ -175,6 +175,16 @@
         mb5 {
             bindings = <&mkp MB5>;
             key-positions = <32 33>;
+        };
+
+        mns {
+            bindings = <&kp MINUS>;
+            key-positions = <11 12>;
+        };
+
+        pls {
+            bindings = <&plus>;
+            key-positions = <1 2>;
         };
     };
 
