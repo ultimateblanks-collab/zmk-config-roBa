@@ -114,12 +114,12 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <12 37>;
+            key-positions = <1 2 3>;
         };
 
         sk {
             bindings = <&S_key LEFT_SHIFT>;
-            key-positions = <13 37>;
+            key-positions = <12 11 13>;
         };
 
         llalt {
@@ -154,7 +154,7 @@
 
         slash {
             bindings = <&us>;
-            key-positions = <4 14>;
+            key-positions = <13 25>;
         };
 
         mb1 {
@@ -1012,9 +1012,9 @@
         default_layer {
             bindings = <
 &kp Q          &kp W          &kp E           &kp R            &kp T                                                                                 &kp Y             &kp U           &kp I            &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F   &kp G           &pl                                &plus                              &kp H             &R_HRM LSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C           &kp V            &kp B           &kp SLASH                          &kp MINUS                          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 4 ENTER
-&athutt        &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                       &hussexc
+&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F   &kp G           &athutt                            &plus                              &kp H             &R_HRM LSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X          &kp C           &kp V            &kp B           &hussexc                           &kp MINUS                          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 4 ENTER
+&pl            &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                       &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
