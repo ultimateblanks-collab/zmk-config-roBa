@@ -22,18 +22,15 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+
     arrows2 {
         layers = <4>;
-        bindings =
-            <&ctpgdn>,
-            <&ctpgup>,
-            <&saltesc>,
-            <&altesc>;
+        bindings = <&ctpgdn>, <&ctpgup>, <&saltesc>, <&altesc>;
 
         tick = <100>;
         wait-ms = <5>;
         tap-ms = <5>;
-    };            
+    };
 };
 
 / {
@@ -192,7 +189,13 @@
         exc: exc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N1>,<&macro_release>,<&kp N1 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N1>,
+                <&macro_release>,
+                <&kp N1 &kp LEFT_SHIFT>;
 
             label = "EXC";
         };
@@ -200,7 +203,13 @@
         dq: dq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N2>,<&macro_release>,<&kp N2 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp N2 &kp LEFT_SHIFT>;
 
             label = "DQ";
         };
@@ -208,7 +217,13 @@
         hush: hush {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N3>,<&macro_release>,<&kp N3 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N3>,
+                <&macro_release>,
+                <&kp N3 &kp LEFT_SHIFT>;
 
             label = "HUSH";
         };
@@ -216,7 +231,13 @@
         dollar: dollar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N4>,<&macro_release>,<&kp N4 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp N4 &kp LEFT_SHIFT>;
 
             label = "DOLLAR";
         };
@@ -224,7 +245,13 @@
         percent: percent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N5>,<&macro_release>,<&kp N5 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N5>,
+                <&macro_release>,
+                <&kp N5 &kp LEFT_SHIFT>;
 
             label = "PERCENT";
         };
@@ -232,7 +259,13 @@
         anp: anp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N6>,<&macro_release>,<&kp N6 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N6>,
+                <&macro_release>,
+                <&kp N6 &kp LEFT_SHIFT>;
 
             label = "ANP";
         };
@@ -240,7 +273,13 @@
         sq: sq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N7>,<&macro_release>,<&kp N7 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N7>,
+                <&macro_release>,
+                <&kp N7 &kp LEFT_SHIFT>;
 
             label = "SQ";
         };
@@ -248,7 +287,13 @@
         lk: lk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N8>,<&macro_release>,<&kp N8 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N8>,
+                <&macro_release>,
+                <&kp N8 &kp LEFT_SHIFT>;
 
             label = "lk";
         };
@@ -256,7 +301,13 @@
         rk: rk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp N9>,<&macro_release>,<&kp N9 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp N9 &kp LEFT_SHIFT>;
 
             label = "RK";
         };
@@ -264,7 +315,13 @@
         us: us {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp INT_RO>,<&macro_release>,<&kp INT_RO &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp INT_RO>,
+                <&macro_release>,
+                <&kp INT_RO &kp LEFT_SHIFT>;
 
             label = "US";
         };
@@ -272,7 +329,13 @@
         pl: pl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp INT3>,<&macro_release>,<&kp INT3 &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp INT3>,
+                <&macro_release>,
+                <&kp INT3 &kp LEFT_SHIFT>;
 
             label = "PL";
         };
@@ -280,7 +343,13 @@
         eql: eql {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp MINUS>,<&macro_release>,<&kp MINUS &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp MINUS &kp LEFT_SHIFT>;
 
             label = "EQL";
         };
@@ -288,7 +357,13 @@
         tilde: tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp EQUAL>,<&macro_release>,<&kp EQUAL &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp EQUAL>,
+                <&macro_release>,
+                <&kp EQUAL &kp LEFT_SHIFT>;
 
             label = "TILDE";
         };
@@ -296,7 +371,13 @@
         plus: plus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp SEMI>,<&macro_release>,<&kp SEMI &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp SEMI>,
+                <&macro_release>,
+                <&kp SEMI &kp LEFT_SHIFT>;
 
             label = "PLUS";
         };
@@ -304,7 +385,13 @@
         aster: aster {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 50>,<&kp SINGLE_QUOTE>,<&macro_release>,<&kp SINGLE_QUOTE &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp SINGLE_QUOTE>,
+                <&macro_release>,
+                <&kp SINGLE_QUOTE &kp LEFT_SHIFT>;
 
             label = "ASTER";
         };
@@ -312,7 +399,13 @@
         stab: stab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 20>,<&kp TAB>,<&macro_release>,<&kp TAB &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp TAB &kp LEFT_SHIFT>;
 
             label = "STAB";
         };
@@ -320,7 +413,13 @@
         endapp: endapp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_ALT>,<&macro_wait_time 50>,<&kp F4>,<&macro_release>,<&kp F4 &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 50>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp F4 &kp LEFT_ALT>;
 
             label = "ENDAPP";
         };
@@ -342,7 +441,13 @@
         ctpgup: ctpgup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 20>,<&kp PG_UP>,<&macro_release>,<&kp PG_UP &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 20>,
+                <&kp PG_UP>,
+                <&macro_release>,
+                <&kp PG_UP &kp LCTRL>;
 
             label = "CTPGUP";
         };
@@ -350,7 +455,13 @@
         ctpgdn: ctpgdn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 20>,<&kp PG_DN>,<&macro_release>,<&kp PG_DN &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 20>,
+                <&kp PG_DN>,
+                <&macro_release>,
+                <&kp PG_DN &kp LCTRL>;
 
             label = "CTPGDN";
         };
@@ -358,7 +469,13 @@
         cthome: cthome {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp HOME>,<&macro_release>,<&kp HOME &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp HOME>,
+                <&macro_release>,
+                <&kp HOME &kp LCTRL>;
 
             label = "CTHOME";
         };
@@ -366,7 +483,13 @@
         ctend: ctend {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp END>,<&macro_release>,<&kp END &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp END>,
+                <&macro_release>,
+                <&kp END &kp LCTRL>;
 
             label = "CTEND";
         };
@@ -374,7 +497,13 @@
         ctdel: ctdel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp DELETE>,<&macro_release>,<&kp DELETE &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp DELETE>,
+                <&macro_release>,
+                <&kp DELETE &kp LCTRL>;
 
             label = "CTDEL";
         };
@@ -382,7 +511,13 @@
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp C>,<&macro_release>,<&kp C &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp C &kp LCTRL>;
 
             label = "COPY";
         };
@@ -390,7 +525,13 @@
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp V>,<&macro_release>,<&kp V &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp V &kp LCTRL>;
 
             label = "PASTE";
         };
@@ -398,7 +539,13 @@
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp Z>,<&macro_release>,<&kp Z &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp Z &kp LCTRL>;
 
             label = "CUT";
         };
@@ -406,7 +553,13 @@
         VBE: VBE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_ALT>,<&macro_wait_time 50>,<&kp F11>,<&macro_release>,<&kp F11 &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 50>,
+                <&kp F11>,
+                <&macro_release>,
+                <&kp F11 &kp LEFT_ALT>;
 
             label = "VBE";
         };
@@ -414,7 +567,13 @@
         prompt: prompt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_WIN>,<&macro_wait_time 50>,<&kp R>,<&macro_release>,<&kp R &kp LEFT_WIN>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_wait_time 50>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp R &kp LEFT_WIN>;
 
             label = "PROMPT";
         };
@@ -422,7 +581,13 @@
         ca: ca {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp A>,<&macro_release>,<&kp A &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp A &kp LCTRL>;
 
             label = "CA";
         };
@@ -430,7 +595,13 @@
         ctrl_t: ctrl_t {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp T>,<&macro_release>,<&kp T &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp T>,
+                <&macro_release>,
+                <&kp T &kp LCTRL>;
 
             label = "CTRL_T";
         };
@@ -438,7 +609,13 @@
         ctrl_w: ctrl_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp W>,<&macro_release>,<&kp W &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp W &kp LCTRL>;
 
             label = "CTRL_W";
         };
@@ -446,7 +623,13 @@
         altleft: altleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_ALT>,<&macro_wait_time 20>,<&kp LEFT_ARROW>,<&macro_release>,<&kp LEFT_ARROW &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 20>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_ARROW &kp LALT>;
 
             label = "ALTLEFT";
         };
@@ -454,7 +637,13 @@
         altright: altright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LALT>,<&macro_wait_time 20>,<&kp RIGHT>,<&macro_release>,<&kp RIGHT &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_wait_time 20>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp RIGHT &kp LEFT_ALT>;
 
             label = "ALTRIGHT";
         };
@@ -462,7 +651,13 @@
         altup: altup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_ALT>,<&macro_wait_time 20>,<&kp UP_ARROW>,<&macro_release>,<&kp UP_ARROW &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 20>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp UP_ARROW &kp LALT>;
 
             label = "ALTUP";
         };
@@ -470,7 +665,13 @@
         altdown: altdown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_ALT>,<&macro_wait_time 20>,<&kp DOWN>,<&macro_release>,<&kp DOWN_ARROW &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 20>,
+                <&kp DOWN>,
+                <&macro_release>,
+                <&kp DOWN_ARROW &kp LEFT_ALT>;
 
             label = "ALTDOWN";
         };
@@ -478,7 +679,13 @@
         L_yamakakko: lyk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 20>,<&kp COMMA>,<&macro_release>,<&kp COMMA &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&kp COMMA>,
+                <&macro_release>,
+                <&kp COMMA &kp LEFT_SHIFT>;
 
             label = "LYK";
         };
@@ -486,7 +693,13 @@
         R_yamakakko: Ryamak {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LEFT_SHIFT>,<&macro_wait_time 20>,<&kp PERIOD>,<&macro_release>,<&kp PERIOD &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&kp PERIOD>,
+                <&macro_release>,
+                <&kp PERIOD &kp LEFT_SHIFT>;
 
             label = "RYAMAK";
         };
@@ -494,7 +707,13 @@
         altesc: altesc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp RIGHT_ALT>,<&macro_wait_time 20>,<&kp ESCAPE>,<&macro_release>,<&kp ESCAPE &kp RIGHT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_wait_time 20>,
+                <&kp ESCAPE>,
+                <&macro_release>,
+                <&kp ESCAPE &kp RIGHT_ALT>;
 
             label = "ALTESC";
         };
@@ -502,7 +721,13 @@
         saltesc: saltesc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp RIGHT_ALT &kp RSHIFT>,<&macro_wait_time 20>,<&kp ESCAPE>,<&macro_release>,<&kp ESCAPE &kp RIGHT_ALT &kp RSHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT &kp RSHIFT>,
+                <&macro_wait_time 20>,
+                <&kp ESCAPE>,
+                <&macro_release>,
+                <&kp ESCAPE &kp RIGHT_ALT &kp RSHIFT>;
 
             label = "SALTESC";
         };
@@ -510,7 +735,13 @@
         ctrlplus: ctrlplus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL &kp LSHFT>,<&macro_wait_time 20>,<&kp SEMI>,<&macro_release>,<&kp SEMI &kp LCTRL &kp LSHFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHFT>,
+                <&macro_wait_time 20>,
+                <&kp SEMI>,
+                <&macro_release>,
+                <&kp SEMI &kp LCTRL &kp LSHFT>;
 
             label = "CTRLPLUS";
         };
@@ -518,7 +749,13 @@
         ctrlminus: ctrlminus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>,<&kp LCTRL>,<&macro_wait_time 50>,<&kp MINUS>,<&macro_release>,<&kp MINUS &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp MINUS &kp LCTRL>;
 
             label = "CTRLMINUS";
         };
@@ -759,16 +996,16 @@
         };
     };
 
-keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q    &kp W          &kp E           &kp R            &kp T                                                                                 &kp Y             &kp U           &kp I            &kp O               &kp P
-&kp A    &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F   &L_HRM LWIN G   &pl                                &plus                              &R_HRM RWIN H     &R_HRM LSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &kp MINUS
-&kp Z    &kp X          &kp C           &kp V            &kp B           &kp SLASH                          &kp MINUS                          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 4 ENTER
-&athutt  &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                       &hussexc
->;
+&kp Q          &kp W          &kp E           &kp R            &kp T                                                                                 &kp Y             &kp U           &kp I            &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F   &kp G           &pl                                &plus                              &kp H             &R_HRM LSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X          &kp C           &kp V            &kp B           &kp SLASH                          &kp MINUS                          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 4 ENTER
+&athutt        &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN      &R_HRM RIGHT_SHIFT K_CONTEXT_MENU  &L_THUMB 2 SPACE                                                       &hussexc
+            >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
@@ -779,7 +1016,7 @@ keymap {
 &none  &none  &none  &none  &none  &kp LCTRL      &none  &mkp MB4  &mkp MB1  &mo 2  &AML_LS 5 MB2  &mkp MB5
 &none  &none  &none  &none  &none  &kp LSHFT      &none  &none     &none     &none  &none          &none
 &none  &none  &none  &none  &none  &none          &none  &none                                     &none
->;
+            >;
         };
 
         ARROW {
@@ -788,7 +1025,7 @@ keymap {
 &none  &none     &none      &none      &none     &none      &none  &kp HOME      &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
 &none  &none     &none      &none      &none     &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LS(END)
 &none  &none     &none      &none      &none     &none      &none  &none                                                          &none
->;
+            >;
         };
 
         NUM {
@@ -797,7 +1034,7 @@ keymap {
 &none  &none     &none      &none      &none     &none      &none  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
 &none  &none     &none      &none      &none     &none      &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
 &none  &none     &none      &none      &none     &none      &none  &none                                             &none
->;
+            >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
@@ -808,7 +1045,7 @@ keymap {
 &none  &none         &none      &none      &none         &none      &none    &kp F11  &kp F4  &kp F5  &kp F6  &none
 &none  &none         &none      &none      &none         &none      &none    &kp F12  &kp F1  &kp F2  &kp F3  &none
 &none  &none         &none      &none      &none         &none      &evalue  &calte                           &none
->;
+            >;
         };
 
         SNIPE {
@@ -817,7 +1054,7 @@ keymap {
 &none  &none  &none  &none  &none  &none      &none  &none  &none     &none  &none     &none
 &none  &none  &none  &none  &none  &none      &none  &none  &none     &none  &none     &none
 &none  &none  &none  &none  &none  &none      &none  &none                             &none
->;
+            >;
         };
 
         layer_6 {
@@ -826,7 +1063,7 @@ keymap {
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
->;
+            >;
         };
     };
 };
