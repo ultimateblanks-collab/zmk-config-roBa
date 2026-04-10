@@ -1018,7 +1018,7 @@
             bindings = <
 &kp Q          &kp W          &kp E           &kp R            &kp T                                                                &kp Y             &kp U           &kp I            &kp O               &kp P
 &L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F   &kp G           &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C           &kp V            &kp B           &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 4 SLASH
+&kp Z          &kp X          &kp C           &kp V            &kp B           &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 1 SLASH
 &pl            &kp SEMICOLON  &kp APOS        &L_THUMB 3 HOME  &L_THUMB 4 END  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &us
             >;
 
