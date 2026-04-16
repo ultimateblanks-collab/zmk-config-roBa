@@ -117,11 +117,6 @@
             key-positions = <24 25>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <18 17>;
-        };
-
         pageup {
             bindings = <&kp PG_UP>;
             key-positions = <2 3>;
@@ -1006,7 +1001,7 @@
         L_THUMB3: L_THUMB3 {
             compatible = "zmk,behavior-hold-tap";
             label = "L_THUMB3";
-            bindings = <&kp>, <&altesc>;
+            bindings = <&mo>, <&altesc>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -1023,10 +1018,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W          &kp E            &kp R           &kp T                                                                &kp Y             &kp U           &kp I            &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D   &L_HRM LSHFT F  &kp G           &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C            &kp V           &kp B           &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &AML_LS 4 PERIOD    &AML_LS 1 SLASH
-&pl            &kp SEMICOLON  &L_THUMB 5 APOS  &L_THUMB 3 TAB  &L_THUMB 4 END  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &us
+&kp Q          &kp W          &kp E            &kp R           &kp T                                                               &kp Y             &kp U           &kp I            &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D   &L_HRM LSHFT F  &kp G          &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X          &kp C            &kp V           &kp B          &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &AML_LS 4 PERIOD    &AML_LS 1 SLASH
+&pl            &kp SEMICOLON  &L_THUMB 5 APOS  &L_THUMB 3 TAB  &L_THUMB3 4 0  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &us
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
