@@ -40,8 +40,8 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
+        stab {
+            bindings = <&stab>;
             key-positions = <19 20>;
         };
 
@@ -540,6 +540,20 @@
                 <&kp NUHS &kp LEFT_SHIFT>;
 
             label = "DAINARI";
+        };
+
+        stab: stab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp TAB &kp LEFT_SHIFT>;
+
+            label = "STAB";
         };
     };
 
