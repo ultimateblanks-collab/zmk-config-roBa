@@ -34,9 +34,6 @@
 };
 
 &inc_dec_kp {
-    bindings = <&altesc>, <&saltesc>;
-
-    tap-ms = <0>;
 };
 
 / {
