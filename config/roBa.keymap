@@ -37,8 +37,8 @@
     combos {
         compatible = "zmk,combos";
 
-        bs {
-            bindings = <&kp BACKSPACE>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <19 20>;
         };
 
@@ -112,8 +112,8 @@
             key-positions = <1 2>;
         };
 
-        ent {
-            bindings = <&kp ENTER>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <18 19>;
         };
     };
