@@ -817,7 +817,7 @@
             bindings = <
 &kp Q          &kp W          &kp E            &kp R            &kp T                                                                &kp Y             &kp U           &kp I            &kp O               &kp P
 &L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D   &L_HRM LSHFT F   &kp G           &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C            &kp V            &kp B           &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &AML_LS 4 PERIOD    &AML_LS 1 SLASH
+&kp Z          &kp X          &kp C            &kp V            &kp B           &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &AML_LS 4 PERIOD    &AML_LS 1 ENTER
 &anpas         &kp SEMICOLON  &L_THUMB 5 APOS  &L_THUMB 3 HOME  &L_THUMB 4 END  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &uspl
             >;
 
@@ -838,7 +838,7 @@
 &none     &none         &lk                &rk                &none                       &none         &ctpgup         &kp UP_ARROW    &ctpgdn          &none
 &kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3  &none      &none  &kp HOME      &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
 &none     &none         &syounari          &dainari           &dollar   &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LS(END)
-&none     &none         &none              &dq                &sq       &none      &none  &none                                                          &none
+&none     &none         &kp SLASH          &dq                &sq       &none      &none  &none                                                          &none
             >;
         };
 
