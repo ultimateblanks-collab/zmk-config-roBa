@@ -57,16 +57,6 @@
             key-positions = <18 13>;
         };
 
-        yen {
-            bindings = <&kp INTERNATIONAL_3>;
-            key-positions = <17 5>;
-        };
-
-        dollar {
-            bindings = <&dollar>;
-            key-positions = <17 29>;
-        };
-
         home {
             bindings = <&kp HOME>;
             key-positions = <6 18>;
@@ -75,16 +65,6 @@
         end {
             bindings = <&kp END>;
             key-positions = <7 19>;
-        };
-
-        sq {
-            bindings = <&sq>;
-            key-positions = <19 31>;
-        };
-
-        anp {
-            bindings = <&anp>;
-            key-positions = <3 13>;
         };
 
         VBE {
@@ -99,11 +79,6 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <1 2 3>;
-        };
-
-        sk {
-            bindings = <&S_key LEFT_SHIFT>;
             key-positions = <12 11 13>;
         };
 
@@ -127,16 +102,6 @@
             key-positions = <13 12>;
         };
 
-        aster {
-            bindings = <&aster>;
-            key-positions = <2 12>;
-        };
-
-        slash {
-            bindings = <&us>;
-            key-positions = <13 25>;
-        };
-
         mns {
             bindings = <&kp MINUS>;
             key-positions = <11 12>;
@@ -154,13 +119,6 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-
         exc: exc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -371,20 +329,6 @@
             label = "ASTER";
         };
 
-        stab: stab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_wait_time 20>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp TAB &kp LEFT_SHIFT>;
-
-            label = "STAB";
-        };
-
         endapp: endapp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -441,90 +385,6 @@
             label = "CTPGDN";
         };
 
-        cthome: cthome {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp HOME>,
-                <&macro_release>,
-                <&kp HOME &kp LCTRL>;
-
-            label = "CTHOME";
-        };
-
-        ctend: ctend {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp END>,
-                <&macro_release>,
-                <&kp END &kp LCTRL>;
-
-            label = "CTEND";
-        };
-
-        ctdel: ctdel {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp DELETE>,
-                <&macro_release>,
-                <&kp DELETE &kp LCTRL>;
-
-            label = "CTDEL";
-        };
-
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp C>,
-                <&macro_release>,
-                <&kp C &kp LCTRL>;
-
-            label = "COPY";
-        };
-
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp V>,
-                <&macro_release>,
-                <&kp V &kp LCTRL>;
-
-            label = "PASTE";
-        };
-
-        cut: cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp Z>,
-                <&macro_release>,
-                <&kp Z &kp LCTRL>;
-
-            label = "CUT";
-        };
-
         VBE: VBE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -553,20 +413,6 @@
             label = "PROMPT";
         };
 
-        ca: ca {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp A>,
-                <&macro_release>,
-                <&kp A &kp LCTRL>;
-
-            label = "CA";
-        };
-
         ctrl_t: ctrl_t {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -593,62 +439,6 @@
                 <&kp W &kp LCTRL>;
 
             label = "CTRL_W";
-        };
-
-        altleft: altleft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_wait_time 20>,
-                <&kp LEFT_ARROW>,
-                <&macro_release>,
-                <&kp LEFT_ARROW &kp LALT>;
-
-            label = "ALTLEFT";
-        };
-
-        altright: altright {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_wait_time 20>,
-                <&kp RIGHT>,
-                <&macro_release>,
-                <&kp RIGHT &kp LEFT_ALT>;
-
-            label = "ALTRIGHT";
-        };
-
-        altup: altup {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_wait_time 20>,
-                <&kp UP_ARROW>,
-                <&macro_release>,
-                <&kp UP_ARROW &kp LALT>;
-
-            label = "ALTUP";
-        };
-
-        altdown: altdown {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_wait_time 20>,
-                <&kp DOWN>,
-                <&macro_release>,
-                <&kp DOWN_ARROW &kp LEFT_ALT>;
-
-            label = "ALTDOWN";
         };
 
         L_yamakakko: lyk {
@@ -719,20 +509,6 @@
                 <&kp SEMI &kp LCTRL &kp LSHFT>;
 
             label = "CTRLPLUS";
-        };
-
-        ctrlminus: ctrlminus {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp MINUS>,
-                <&macro_release>,
-                <&kp MINUS &kp LCTRL>;
-
-            label = "CTRLMINUS";
         };
 
         syounari: syounari {
@@ -1011,6 +787,24 @@
             hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 28 29 40 41 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42>;
             hold-trigger-on-release;
         };
+
+        anpas: anpas {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ANPAS";
+            bindings = <&anp>, <&aster>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
+
+        uspl: uspl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "USPL";
+            bindings = <&us>, <&pl>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -1021,7 +815,7 @@
 &kp Q          &kp W          &kp E            &kp R           &kp T                                                               &kp Y             &kp U           &kp I            &kp O               &kp P
 &L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D   &L_HRM LSHFT F  &kp G          &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
 &kp Z          &kp X          &kp C            &kp V           &kp B          &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &AML_LS 4 PERIOD    &AML_LS 1 SLASH
-&pl            &kp SEMICOLON  &L_THUMB 5 APOS  &L_THUMB 3 TAB  &L_THUMB3 4 0  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &us
+&anpas         &kp SEMICOLON  &L_THUMB 5 APOS  &L_THUMB 3 TAB  &L_THUMB3 4 0  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &uspl
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -1029,28 +823,28 @@
 
         MOUSE {
             bindings = <
-&none  &none     &none      &none      &none                          &none     &ctpgup         &msc SCRL_UP    &ctpgdn          &none
-&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &mkp MB4  &mkp MB1        &mkp MB2        &mkp MB5         &none
-&none  &none     &none      &none      &none  &kp LSHFT      &none    &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&none  &none     &none      &none      &none  &none          &ctrl_t  &ctrl_w                                                    &none
+&none  &none     &none      &none      &none                          &none     &ctpgup   &msc SCRL_UP    &ctpgdn   &none
+&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME  &mkp MB1  &mkp MCLK       &mkp MB2  &none
+&none  &none     &none      &none      &none  &kp LSHFT      &none    &kp END   &mkp MB4  &msc SCRL_DOWN  &mkp MB5  &none
+&none  &none     &none      &none      &none  &none          &ctrl_t  &ctrl_w                                       &none
             >;
         };
 
         ARROW {
             bindings = <
-&none     &none         &none      &none      &none                    &none         &ctpgup         &kp UP_ARROW    &ctpgdn          &none
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none  &none      &none  &kp HOME      &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
-&none     &none         &none      &none      &none  &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LS(END)
-&none     &none         &none      &none      &none  &none      &none  &none                                                          &none
+&none     &none         &rk                &lk                &none                       &none         &ctpgup         &kp UP_ARROW    &ctpgdn          &none
+&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3  &none      &none  &kp HOME      &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
+&none     &none         &syounari          &dainari           &dollar   &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LS(END)
+&none     &none         &none              &dq                &sq       &none      &none  &none                                                          &none
             >;
         };
 
         NUM {
             bindings = <
-&none     &none         &none      &none      &none                    &kp N0  &kp N7        &kp N8        &kp N9        &none
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none  &none      &none  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
-&none     &none         &none      &none      &none  &none      &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&none     &none         &none      &none      &none  &none      &none  &none                                             &none
+&none     &none         &none      &none      &none                    &kp N0         &kp N7        &kp N8        &kp N9        &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none  &none      &none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
+&none     &none         &none      &none      &none  &none      &none  &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&none     &none         &none      &none      &none  &none      &none  &kp BACKSPACE                                            &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
