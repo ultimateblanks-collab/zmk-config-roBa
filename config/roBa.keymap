@@ -40,8 +40,8 @@
     combos {
         compatible = "zmk,combos";
 
-        stab {
-            bindings = <&stab>;
+        end {
+            bindings = <&kp END>;
             key-positions = <19 20>;
         };
 
@@ -58,16 +58,6 @@
         input {
             bindings = <&kp GRAVE>;
             key-positions = <18 13>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <6 18>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <7 19>;
         };
 
         VBE {
@@ -115,9 +105,19 @@
             key-positions = <1 2>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
+        home {
+            bindings = <&kp HOME>;
             key-positions = <18 19>;
+        };
+
+        altesc {
+            bindings = <&altesc>;
+            key-positions = <6 18>;
+        };
+
+        saltesc {
+            bindings = <&saltesc>;
+            key-positions = <7 19>;
         };
     };
 
@@ -840,10 +840,10 @@
 
         MOUSE {
             bindings = <
-&none  &none     &none      &none      &none                          &none          &ctpgup   &msc SCRL_UP    &ctpgdn   &none
-&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME       &mkp MB1  &mkp MCLK       &mkp MB2  &none
-&none  &none     &none      &none      &none  &kp LSHFT      &none    &kp END        &mkp MB4  &msc SCRL_DOWN  &mkp MB5  &none
-&none  &none     &none      &none      &none  &none          &ctrl_t  &kp BACKSPACE                                      &none
+&none  &none     &none      &none      &none                          &none          &ctpgup   &msc SCRL_UP  &ctpgdn   &none
+&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME       &mkp MB1  &mkp MCLK     &mkp MB2  &none
+&none  &none     &none      &none      &none  &kp LSHFT      &none    &stab          &kp TAB   &mkp MB4      &mkp MB5  &none
+&none  &none     &none      &none      &none  &none          &ctrl_t  &kp BACKSPACE                                    &none
             >;
         };
 
