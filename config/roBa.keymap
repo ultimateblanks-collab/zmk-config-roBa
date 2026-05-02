@@ -840,10 +840,10 @@
 
         MOUSE {
             bindings = <
-&none  &none     &none      &none      &none                          &none          &ctpgup   &msc SCRL_UP  &ctpgdn   &none
-&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME       &mkp MB1  &mkp MCLK     &mkp MB2  &none
-&none  &none     &none      &none      &none  &kp LSHFT      &none    &stab          &kp TAB   &mkp MB4      &mkp MB5  &none
-&none  &none     &none      &none      &none  &none          &ctrl_t  &kp BACKSPACE                                    &none
+&none  &none     &none      &none      &none                          &none          &kp TAB   &stab      &none     &none
+&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME       &mkp MB1  &mkp MB2   &mkp MB4  &none
+&none  &none     &none      &none      &none  &kp LSHFT      &none    &stab          &kp TAB   &mkp MCLK  &mkp MB5  &none
+&none  &none     &none      &none      &none  &none          &ctrl_t  &kp BACKSPACE                                 &none
             >;
         };
 
