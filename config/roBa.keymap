@@ -840,10 +840,10 @@
 
         MOUSE {
             bindings = <
-&none  &none     &none      &none      &none                          &none     &ctpgup   &msc SCRL_UP    &ctpgdn   &none
-&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME  &mkp MB1  &mkp MCLK       &mkp MB2  &none
-&none  &none     &none      &none      &none  &kp LSHFT      &none    &kp END   &mkp MB4  &msc SCRL_DOWN  &mkp MB5  &none
-&none  &none     &none      &none      &none  &none          &ctrl_t  &ctrl_w                                       &none
+&none  &none     &none      &none      &none                          &none          &ctpgup   &msc SCRL_UP    &ctpgdn   &none
+&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME       &mkp MB1  &mkp MCLK       &mkp MB2  &none
+&none  &none     &none      &none      &none  &kp LSHFT      &none    &kp END        &mkp MB4  &msc SCRL_DOWN  &mkp MB5  &none
+&none  &none     &none      &none      &none  &none          &ctrl_t  &kp BACKSPACE                                      &none
             >;
         };
 
@@ -851,7 +851,7 @@
             bindings = <
 &none     &none         &lk                &rk                &none                       &none         &ctpgup         &kp UP_ARROW    &ctpgdn          &none
 &kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3  &none      &none  &kp HOME      &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
-&none     &none         &syounari          &dainari           &dollar   &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LS(END)
+&none     &none         &syounari          &dainari           &dollar   &none      &none  &kp LS(HOME)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp BACKSPACE
 &none     &none         &kp SLASH          &dq                &sq       &none      &none  &none                                                          &none
             >;
         };
