@@ -42,17 +42,12 @@
 
         end {
             bindings = <&kp END>;
-            key-positions = <19 7>;
+            key-positions = <19 20>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <7 8>;
-        };
-
-        del {
-            bindings = <&kp DELETE>;
-            key-positions = <6 7>;
         };
 
         input {
@@ -73,16 +68,6 @@
         cw {
             bindings = <&C_W>;
             key-positions = <12 11 13>;
-        };
-
-        llalt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <23 24>;
-        };
-
-        llctl {
-            bindings = <&kp LCTRL>;
-            key-positions = <24 25>;
         };
 
         pageup {
@@ -107,17 +92,7 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <18 6>;
-        };
-
-        altesc {
-            bindings = <&altesc>;
             key-positions = <18 19>;
-        };
-
-        saltesc {
-            bindings = <&saltesc>;
-            key-positions = <19 20>;
         };
     };
 
@@ -555,6 +530,34 @@
 
             label = "STAB";
         };
+
+        larger: dai {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp PERIOD>,
+                <&macro_release>,
+                <&kp PERIOD &kp LEFT_SHIFT>;
+
+            label = "DAI";
+        };
+
+        smaller: smaller {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp COMMA>,
+                <&macro_release>,
+                <&kp COMMA &kp LEFT_SHIFT>;
+
+            label = "SMALLER";
+        };
     };
 
     behaviors {
@@ -829,10 +832,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W          &kp E            &kp R            &kp T                                                                &kp Y             &kp U           &kp I            &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D   &L_HRM LSHFT F   &kp G           &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C            &kp V            &kp B           &hussexc                    &kp PRINTSCREEN          &kp N             &AML_LS 3 M     &AML_LS 2 COMMA  &AML_LS 4 PERIOD    &AML_LS 1 ENTER
-&anpas         &kp SEMICOLON  &L_THUMB 5 APOS  &L_THUMB 3 HOME  &L_THUMB 4 END  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &uspl
+&kp Q          &kp W            &kp E               &kp R                &kp T                                                                  &kp Y             &kp U           &kp I            &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LALT S    &L_HRM LCTRL D      &L_HRM LSHFT F       &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X            &kp C               &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 1 ENTER
+&anpas         &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &uspl
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
@@ -840,19 +843,19 @@
 
         MOUSE {
             bindings = <
-&none  &none     &none      &none      &none                          &none          &none     &mkp MCLK  &mkp MB5  &none
-&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none    &kp HOME       &mkp MB1  &mkp MB2   &mkp MB4  &none
-&none  &none     &none      &none      &none  &kp LSHFT      &none    &none          &kp TAB   &none      &stab     &none
-&none  &none     &none      &none      &none  &none          &ctrl_t  &kp BACKSPACE                                 &none
+&none  &none     &none      &none      &none                        &none     &none     &mkp MCLK  &mkp MB5  &none
+&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LCTRL      &none  &kp HOME  &mkp MB1  &mkp MB2   &mkp MB4  &none
+&none  &none     &none      &none      &none  &kp LSHFT      &none  &none     &none     &none      &none     &none
+&none  &none     &none      &none      &none  &none          &none  &none                                    &none
             >;
         };
 
         ARROW {
             bindings = <
-&none     &none         &lk                &rk                &none                       &none     &ctpgup         &kp UP_ARROW  &ctpgdn    &none
-&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3  &none      &none  &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&none     &none         &syounari          &dainari           &dollar   &none      &none  &none     &kp TAB         &none         &stab      &kp BACKSPACE
-&none     &none         &kp SLASH          &dq                &sq       &none      &none  &none                                              &none
+&dollar           &kp INTERNATIONAL_3         &lk                &rk                &none                        &none          &ctpgup         &kp UP_ARROW  &ctpgdn    &none
+&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3   &none      &none  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
+&dq               &sq                         &syounari          &dainari           &kp SLASH  &none      &none  &kp DELETE     &altesc         &kp TAB       &saltesc   &kp BACKSPACE
+&none             &none                       &kp SLASH          &smaller           &larger    &none      &none  &none                                                   &none
             >;
         };
 
@@ -878,10 +881,10 @@
 
         SNIPE {
             bindings = <
-&none  &none  &none  &none  &none                    &kp INTERNATIONAL_3  &dq    &lk        &rk       &none
-&none  &none  &none  &none  &none  &none      &none  &dollar              &sq    &kp RBKT   &kp NUHS  &none
-&none  &none  &none  &none  &none  &none      &none  &none                &none  &syounari  &dainari  &none
-&none  &none  &none  &none  &none  &none      &none  &none                                            &none
+&none  &none  &none  &none  &none                    &kp INTERNATIONAL_3  &dq    &lk       &rk       &none
+&none  &none  &none  &none  &none  &none      &none  &dollar              &sq    &kp RBKT  &kp NUHS  &none
+&none  &none  &none  &none  &none  &none      &none  &none                &none  &smaller  &dainari  &none
+&none  &none  &none  &none  &none  &none      &none  &none                                           &none
             >;
         };
 
