@@ -834,7 +834,7 @@
             bindings = <
 &kp Q          &kp W            &kp E               &kp R                &kp T                                                                  &kp Y             &kp U           &kp I            &kp O               &kp P
 &L_HRM LWIN A  &L_HRM LALT S    &L_HRM LCTRL D      &L_HRM LSHFT F       &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H             &R_HRM RSHFT J  &R_HRM RCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X            &kp C               &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 1 ENTER
+&kp Z          &kp X            &kp C               &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &AML_LS 1 SLASH
 &anpas         &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &uspl
             >;
 
@@ -853,8 +853,8 @@
         ARROW {
             bindings = <
 &dollar           &kp INTERNATIONAL_3         &lk                &rk                &none                        &none          &altesc    &kp TAB         &ctpgup    &none
-&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3   &none      &none  &kp BACKSPACE  &kp ENTER  &kp UP_ARROW    &ctpgdn    &kp END
-&dq               &sq                         &syounari          &dainari           &kp SLASH  &none      &none  &kp DELETE     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp BACKSPACE
+&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3   &none      &none  &kp BACKSPACE  &kp ENTER  &kp UP_ARROW    &ctpgdn    &kp HOME
+&dq               &sq                         &syounari          &dainari           &kp SLASH  &none      &none  &kp DELETE     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp END
 &none             &none                       &kp SLASH          &smaller           &larger    &none      &none  &none                                                &none
             >;
         };
