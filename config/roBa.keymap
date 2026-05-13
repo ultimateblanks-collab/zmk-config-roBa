@@ -852,19 +852,19 @@
 
         ARROW {
             bindings = <
-&dollar           &kp INTERNATIONAL_3         &lk                &rk                &none                        &none          &ctpgup         &kp UP_ARROW  &ctpgdn    &none
-&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3   &none      &none  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&dq               &sq                         &syounari          &dainari           &kp SLASH  &none      &none  &kp DELETE     &altesc         &kp TAB       &saltesc   &kp BACKSPACE
-&none             &none                       &kp SLASH          &smaller           &larger    &none      &none  &none                                                   &none
+&dollar           &kp INTERNATIONAL_3         &lk                &rk                &none                        &none          &altesc    &kp TAB         &ctpgup    &none
+&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &kp INT3   &none      &none  &kp BACKSPACE  &kp ENTER  &kp UP_ARROW    &ctpgdn    &kp END
+&dq               &sq                         &syounari          &dainari           &kp SLASH  &none      &none  &kp DELETE     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp BACKSPACE
+&none             &none                       &kp SLASH          &smaller           &larger    &none      &none  &none                                                &none
             >;
         };
 
         NUM {
             bindings = <
-&none     &none         &none      &none      &none                    &kp N0         &kp N7        &kp N8        &kp N9        &none
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none  &none      &none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
-&none     &none         &none      &none      &none  &none      &none  &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&none     &none         &none      &none      &none  &none      &none  &kp BACKSPACE                                            &none
+&none     &none         &none      &none      &none                    &kp N0  &kp N7        &kp N8        &kp N9        &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none  &none      &none  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
+&none     &none         &none      &none      &none  &none      &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&none     &none         &none      &none      &none  &none      &none  &mo 2                                             &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
