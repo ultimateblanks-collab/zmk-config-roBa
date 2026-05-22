@@ -859,6 +859,18 @@
             flavor = "balanced";
             hold-trigger-key-positions = <18 17 19 20>;
         };
+
+        MINUS_L5: MINUS_L5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MINUS_L5";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <17 18 19 20>;
+        };
     };
 
     keymap {
@@ -867,8 +879,8 @@
         default_layer {
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R       &kp T                                                                  &kp Y             &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S          &kp D           &kp F                &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H             &kp J           &MLSP 1 K        &kp L               &kp MINUS
-&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &USPL_L5 5 0
+&kp A          &kp S          &kp D           &kp F                &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H             &kp J           &MLSP 1 K        &kp L               &MINUS_L5 5 MINUS
+&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &uspl
 &anpas         &kp SEMI       &kp APOSTROPHE  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &kp SLASH
             >;
 
