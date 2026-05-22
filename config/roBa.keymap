@@ -847,6 +847,18 @@
             #binding-cells = <2>;
             tapping-term-ms = <5>;
         };
+
+        USPL_L5: USPL_L5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "USPL_L5";
+            bindings = <&mo>, <&uspl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <18 17 19 20>;
+        };
     };
 
     keymap {
@@ -856,7 +868,7 @@
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R       &kp T                                                                  &kp Y             &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RWIN P
 &kp A          &kp S          &kp D           &kp F                &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H             &kp J           &MLSP 1 K        &kp L               &kp MINUS
-&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &uspl
+&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &USPL_L5 5 0
 &anpas         &kp SEMI       &kp APOSTROPHE  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &kp SLASH
             >;
 
@@ -874,10 +886,10 @@
 
         ARROW {
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                        &none          &altesc    &kp TAB         &ctpgup    &none
-&dq               &sq                         &lk                &rk                &aster    &none      &none  &kp BACKSPACE  &kp ENTER  &kp UP_ARROW    &ctpgdn    &kp HOME
-&dollar           &kp INTERNATIONAL_3         &syounari          &dainari           &percent  &none      &none  &kp DELETE     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp END
-&none             &none                       &kp SLASH          &smaller           &larger   &none      &none  &none                                                &none
+&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                           &none     &ctpgup   &kp UP_ARROW    &ctpgdn    &none
+&dq               &sq                         &lk                &rk                &aster    &none      &none     &kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END
+&dollar           &kp INTERNATIONAL_3         &syounari          &dainari           &percent  &none      &none     &none     &altesc   &none           &saltesc   &none
+&none             &none                       &kp SLASH          &smaller           &larger   &none      &saltesc  &altesc                                        &none
             >;
         };
 
@@ -903,10 +915,10 @@
 
         SNIPE {
             bindings = <
-&none  &none  &none  &none  &none                    &kp INTERNATIONAL_3  &dq    &lk       &rk       &none
-&none  &none  &none  &none  &none  &none      &none  &dollar              &sq    &kp RBKT  &kp NUHS  &none
-&none  &none  &none  &none  &none  &none      &none  &none                &none  &smaller  &dainari  &none
-&none  &none  &none  &none  &none  &none      &none  &none                                           &none
+&none  &none  &none  &none  &none                    &none          &none      &none    &none       &none
+&none  &none  &none  &none  &none  &none      &none  &kp BACKSPACE  &kp ENTER  &kp TAB  &kp DELETE  &none
+&none  &none  &none  &none  &none  &none      &none  &none          &altesc    &none    &saltesc    &none
+&none  &none  &none  &none  &none  &none      &none  &none                                          &none
             >;
         };
 
