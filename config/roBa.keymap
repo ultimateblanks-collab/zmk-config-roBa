@@ -927,7 +927,7 @@
 
         SNIPE {
             bindings = <
-&none  &none  &none  &none  &none                       &none          &none      &kp TAB     &none     &none
+&none  &none  &none  &none  &none                       &none          &stab      &kp TAB     &none     &none
 &none  &none  &none  &none  &none  &none      &none     &kp BACKSPACE  &kp ENTER  &kp DELETE  &none     &none
 &none  &none  &none  &none  &none  &none      &none     &none          &altesc    &none       &saltesc  &none
 &none  &none  &none  &none  &none  &none      &saltesc  &altesc                                         &none
