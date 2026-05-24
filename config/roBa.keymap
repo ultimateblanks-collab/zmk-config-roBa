@@ -883,10 +883,10 @@
 
         default_layer {
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R       &kp T                                                                  &kp Y             &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S          &kp D           &kp F                &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H             &kp J           &MLSP 1 K        &kp L               &MINUS_L5 5 MINUS
-&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &uspl
-&anpas         &kp SEMI       &kp APOSTROPHE  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E         &L_HRM LSHFT R       &kp T                                                                  &kp Y             &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RWIN P
+&kp A          &kp S          &kp D                  &kp F                &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H             &kp J           &MLSP 1 K        &kp L               &MINUS_L5 5 MINUS
+&kp Z          &kp X          &kp C                  &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N             &kp M           &AML_LS 2 COMMA  &kp PERIOD          &uspl
+&anpas         &kp SEMI       &L_THUMB 3 APOSTROPHE  &L_THUMB 5 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 SPACE                                                       &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
@@ -932,10 +932,10 @@
 
         SNIPE {
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                       &none          &stab      &kp TAB     &none     &none
-&none     &none         &none      &none      &none  &none      &none     &kp BACKSPACE  &kp ENTER  &kp DELETE  &none     &none
-&none     &none         &none      &none      &none  &none      &none     &none          &altesc    &none       &saltesc  &none
-&none     &none         &none      &none      &none  &none      &saltesc  &altesc                                         &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                       &none          &altesc    &kp HOME  &saltesc  &none
+&none     &kp END       &none      &kp HOME   &none  &none      &none     &kp BACKSPACE  &kp ENTER  &kp TAB   &stab     &kp DEL
+&none     &none         &none      &none      &none  &none      &none     &none          &altesc    &kp END   &saltesc  &none
+&none     &none         &none      &none      &none  &none      &saltesc  &altesc                                       &none
             >;
         };
 
