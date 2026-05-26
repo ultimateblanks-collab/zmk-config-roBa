@@ -886,6 +886,16 @@
             flavor = "balanced";
             hold-trigger-key-positions = <17 18 19 20 7 41 40>;
         };
+
+        SLSP_1: SLSP_1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SLSP_1";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -893,10 +903,10 @@
 
         default_layer {
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R       &kp T                                                                  &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S          &kp D           &kp F                &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H                 &kp J           &MLSP 1 K        &kp L               &kp MINUS
-&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N                 &kp M           &AML_LS 2 COMMA  &kp PERIOD          &uspl
-&anpas         &kp SEMI       &kp APOS        &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 BACKSPACE                                                       &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R       &kp T                                                                  &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
+&kp A          &kp S          &kp D           &kp F                &kp G             &athutt                     &kp K_CONTEXT_MENU       &kp H                 &kp J           &MLSP 1 K       &AML_LS 2 L         &kp MINUS
+&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                    &kp PRINTSCREEN          &kp N                 &kp M           &kp COMMA       &kp PERIOD          &uspl
+&anpas         &kp SEMI       &kp APOS        &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_THUMB2 LEFT_SHIFT 0      &R_THUMB2 RIGHT_SHIFT 0  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
