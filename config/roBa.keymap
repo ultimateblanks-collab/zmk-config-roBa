@@ -42,7 +42,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <19 20>;
+            key-positions = <17 18>;
         };
 
         esc {
@@ -92,7 +92,7 @@
 
         ent {
             bindings = <&kp ENTER>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
         };
 
         skey {
@@ -100,9 +100,9 @@
             key-positions = <18 19 20>;
         };
 
-        bs {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <17 18>;
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <18 19>;
         };
 
         del {
