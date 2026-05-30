@@ -883,10 +883,10 @@
 
         default_layer {
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R    &kp T                                                                     &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S          &kp D           &kp F             &kp G                &athutt                      &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &AML_LS 4 MINUS
-&kp Z          &kp X          &kp C           &kp V             &kp B                &hussexc                     &kp PRINTSCREEN         &kp N                 &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
-&anpas         &kp SEMI       &kp APOS        &L_THUMB 3 SPACE  &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R   &kp T                                                                   &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
+&kp A          &kp S          &kp D           &kp F            &kp G             &athutt                       &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &AML_LS 4 MINUS
+&kp Z          &kp X          &kp C           &kp V            &kp B             &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
+&anpas         &kp SEMI       &kp APOS        &L_THUMB 3 LALT  &L_THUMB 4 LCTRL  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
