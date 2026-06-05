@@ -932,10 +932,10 @@
 
         default_layer {
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHFT R  &kp T                                                            &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S            &kp D               &kp F           &kp G    &athutt                       &kp K_CONTEXT_MENU        &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
-&kp Z          &kp X            &kp C               &kp V           &kp B    &hussexc                      &kp PRINTSCREEN           &kp N                 &kp M           &cosq           &perdq              &kp ENTER
-&anpas         &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &altcontrol     &kp TAB  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT SPACE  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHFT R  &kp T                                                                   &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
+&kp A          &kp S            &kp D               &kp F           &kp G           &athutt                       &kp K_CONTEXT_MENU        &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
+&kp Z          &kp X            &kp C               &kp V           &kp B           &hussexc                      &kp PRINTSCREEN           &kp N                 &kp M           &cosq           &perdq              &kp ENTER
+&anpas         &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &altcontrol     &L_THUMB 4 TAB  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT SPACE  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
@@ -943,10 +943,10 @@
 
         MOUSE {
             bindings = <
-&none               &kp LALT    &kp LCTRL        &kp LSHFT  &none                           &none     &none     &none  &none          &none
-&kp K_CONTEXT_MENU  &winshiftS  &kp PRINTSCREEN  &altprsc   &none  &kp LCTRL      &none     &kp HOME  &mkp MB1  &none  &SL_SP3 2 MB2  &kp END
-&none               &none       &none            &none      &none  &kp LSHFT      &none     &none     &none     &none  &none          &none
-&none               &none       &none            &none      &none  &none          &mkp MB5  &mkp MB4                                  &none
+&none  &kp LALT  &kp LCTRL  &kp LSHFT  &none                           &none     &none     &none  &none          &none
+&none  &none     &none      &none      &none  &kp LCTRL      &none     &kp HOME  &mkp MB1  &none  &SL_SP3 2 MB2  &kp END
+&none  &none     &none      &none      &none  &kp LSHFT      &none     &none     &none     &none  &none          &none
+&none  &none     &none      &none      &none  &none          &mkp MB5  &mkp MB4                                  &none
             >;
         };
 
@@ -972,10 +972,10 @@
 
         FUNC {
             bindings = <
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                       &none    &kp RSHFT  &kp RCTRL  &kp RIGHT_ALT  &kp RWIN
-&kp F1        &kp F2        &kp F3     &kp F4     &kp F5  &none      &none    &kp F6   &kp F7     &kp F8     &kp F9         &kp F10
-&none         &none         &none      &none      &none   &none      &none    &kp F11  &kp F12    &kp F13    &kp F14        &kp F15
-&none         &none         &none      &none      &none   &none      &evalue  &calte                                        &none
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                      &none      &kp RSHFT           &kp RCTRL   &kp RIGHT_ALT  &kp RWIN
+&none         &none         &none      &none      &none  &none      &none    &kp PG_UP  &kp K_CONTEXT_MENU  &winshiftS  &altprsc       &kp PAGE_DOWN
+&none         &none         &none      &none      &none  &none      &none    &none      &none               &none       &none          &none
+&none         &none         &none      &none      &none  &none      &evalue  &calte                                                    &none
             >;
         };
 
