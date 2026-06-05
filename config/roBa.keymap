@@ -603,7 +603,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 28 29 40 41 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42>;
+            hold-trigger-key-positions = <5 6 7 8 9 17 18 19 40 41 5 6 7 8 9 17 18 19 20 21 40 41 42 10 0 1 11 12 2 3 13 14 4>;
             hold-trigger-on-release;
         };
 
@@ -917,11 +917,13 @@
             flavor = "balanced";
         };
 
-        altcontrol: altcontrol {
+        appprint: appprint {
             compatible = "zmk,behavior-tap-dance";
-            label = "ALTCONTROL";
+            label = "APPPRINT";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&kp LCTRL>;
+            bindings = <&L_THUMB 3 K_CONTEXT_MENU>, <&kp PRINTSCREEN>;
+
+            tapping-term-ms = <180>;
         };
     };
 
@@ -930,10 +932,10 @@
 
         default_layer {
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R    &kp T                                                              &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S          &kp D           &kp F             &kp G        &athutt                       &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
-&kp Z          &kp X          &kp C           &kp V             &kp B        &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &cosq           &perdq              &kp ENTER
-&anpas         &kp PG_UP      &kp PAGE_DOWN   &L_THUMB 3 SPACE  &altcontrol  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R  &kp T                                                            &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
+&kp A          &kp S          &kp D           &kp F           &kp G    &athutt                       &kp K_CONTEXT_MENU        &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
+&kp Z          &kp X          &kp C           &kp V           &kp B    &hussexc                      &kp PRINTSCREEN           &kp N                 &kp M           &cosq           &perdq              &kp ENTER
+&anpas         &kp PG_UP      &kp PAGE_DOWN   &appprint       &kp TAB  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT SPACE  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
