@@ -89,6 +89,11 @@
             bindings = <&kp DELETE>;
             key-positions = <6 7>;
         };
+
+        winR {
+            bindings = <&prompt>;
+            key-positions = <1 2 3>;
+        };
     };
 
     macros {
@@ -378,40 +383,12 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_WIN>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp R>,
                 <&macro_release>,
                 <&kp R &kp LEFT_WIN>;
 
             label = "PROMPT";
-        };
-
-        ctrl_t: ctrl_t {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp T>,
-                <&macro_release>,
-                <&kp T &kp LCTRL>;
-
-            label = "CTRL_T";
-        };
-
-        ctrl_w: ctrl_w {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp W>,
-                <&macro_release>,
-                <&kp W &kp LCTRL>;
-
-            label = "CTRL_W";
         };
 
         L_yamakakko: lyk {
@@ -490,7 +467,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_SHIFT>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp RBKT>,
                 <&macro_release>,
                 <&kp RBKT &kp LEFT_SHIFT>;
@@ -504,7 +481,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_SHIFT>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp NUHS>,
                 <&macro_release>,
                 <&kp NUHS &kp LEFT_SHIFT>;
@@ -518,7 +495,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_SHIFT>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp TAB>,
                 <&macro_release>,
                 <&kp TAB &kp LEFT_SHIFT>;
@@ -532,7 +509,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_SHIFT>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp PERIOD>,
                 <&macro_release>,
                 <&kp PERIOD &kp LEFT_SHIFT>;
@@ -546,12 +523,26 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_SHIFT>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp COMMA>,
                 <&macro_release>,
                 <&kp COMMA &kp LEFT_SHIFT>;
 
             label = "SMALLER";
+        };
+
+        wintab: wintab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LWIN>,
+                <&macro_wait_time 50>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp TAB &kp LWIN>;
+
+            label = "WINTAB";
         };
     };
 
@@ -906,7 +897,7 @@
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R   &kp T                                                                   &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
 &kp A          &kp S          &kp D           &kp F            &kp G             &athutt                       &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
-&kp Z          &kp X          &kp C           &kp V            &kp B             &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &cosq           &perdq              &kp ENTER
+&kp Z          &kp X          &kp C           &kp V            &kp B             &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
 &anpas         &kp SEMI       &kp APOS        &L_THUMB 3 LALT  &L_THUMB 4 LCTRL  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
             >;
 
@@ -926,7 +917,7 @@
             bindings = <
 &L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                        &C_W       &ctpgup   &kp UP_ARROW    &ctpgdn    &none
 &dq               &sq                         &lk                &rk                &aster    &none      &none  &sk LSHFT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp GRAVE
-&us               &pl                         &syounari          &dainari           &percent  &none      &none  &none      &altesc   &none           &saltesc   &none
+&us               &pl                         &syounari          &dainari           &percent  &none      &none  &none      &altesc   &none           &saltesc   &wintab
 &dollar           &kp INTERNATIONAL_3         &kp SLASH          &smaller           &larger   &none      &none  &none                                           &none
             >;
         };
