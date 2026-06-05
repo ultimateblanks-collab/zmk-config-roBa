@@ -921,7 +921,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ALTCONTROL";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&kp RCTRL>;
+            bindings = <&L_THUMB 3 LEFT_ALT>, <&kp RCTRL>;
 
             tapping-term-ms = <180>;
         };
