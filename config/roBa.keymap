@@ -548,6 +548,20 @@
 
             label = "WINSHIFTS";
         };
+
+        altprsc: altprsc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 50>,
+                <&kp PRINTSCREEN>,
+                <&macro_release>,
+                <&kp PRINTSCREEN &kp LEFT_ALT>;
+
+            label = "ALTPRSC";
+        };
     };
 
     behaviors {
@@ -909,10 +923,10 @@
 
         default_layer {
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R   &kp T                                                                 &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S          &kp D           &kp F            &kp G           &athutt                       &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
-&kp Z          &kp X          &kp C           &kp V            &kp B           &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &cosq           &perdq              &kp ENTER
-&anpas         &kp LCTRL      &kp LEFT_ALT    &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R       &kp T                                                                   &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
+&kp A          &kp S          &kp D           &kp F                &kp G             &athutt                       &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
+&kp Z          &kp X          &kp C           &kp V                &kp B             &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &cosq           &perdq              &kp ENTER
+&anpas         &kp PG_UP      &kp PAGE_DOWN   &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
@@ -920,10 +934,10 @@
 
         MOUSE {
             bindings = <
-&none  &kp LALT        &kp LCTRL        &kp LSHFT           &none                           &none     &none     &none  &none          &none
-&none  &winshiftS      &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &none  &kp LCTRL      &none     &kp HOME  &mkp MB1  &none  &SL_SP3 2 MB2  &kp END
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT           &none  &kp LSHFT      &none     &none     &none     &none  &none          &none
-&none  &none           &none            &none               &none  &none          &mkp MB5  &mkp MB4                                  &none
+&none     &kp LALT    &kp LCTRL        &kp LSHFT           &none                           &none     &none     &none  &none          &none
+&altprsc  &winshiftS  &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &none  &kp LCTRL      &none     &kp HOME  &mkp MB1  &none  &SL_SP3 2 MB2  &kp END
+&none     &none       &none            &none               &none  &kp LSHFT      &none     &none     &none     &none  &none          &none
+&none     &none       &none            &none               &none  &none          &mkp MB5  &mkp MB4                                  &none
             >;
         };
 
