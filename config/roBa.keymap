@@ -876,6 +876,27 @@
             tapping-term-ms = <180>;
             flavor = "balanced";
         };
+
+        mius: mius {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MIUS";
+            #binding-cells = <0>;
+            bindings = <&AML_LS 4 MINUS>, <&us>;
+        };
+
+        cosq: cosq {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COSQ";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&sq>;
+        };
+
+        perdq: perdq {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PERDQ";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&dq>;
+        };
     };
 
     keymap {
@@ -884,8 +905,8 @@
         default_layer {
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHFT R   &kp T                                                                   &kp Y                 &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A          &kp S          &kp D           &kp F            &kp G             &athutt                       &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &AML_LS 4 MINUS
-&kp Z          &kp X          &kp C           &kp V            &kp B             &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
+&kp A          &kp S          &kp D           &kp F            &kp G             &athutt                       &kp K_CONTEXT_MENU      &kp H                 &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
+&kp Z          &kp X          &kp C           &kp V            &kp B             &hussexc                      &kp PRINTSCREEN         &kp N                 &kp M           &cosq           &perdq              &kp ENTER
 &anpas         &kp SEMI       &kp APOS        &L_THUMB 3 LALT  &L_THUMB 4 LCTRL  &L_HRM LEFT_SHIFT DELETE      &R_HRM RIGHT_SHIFT TAB  &L_THUMB 2 BACKSPACE                                                      &kp SLASH
             >;
 
@@ -912,10 +933,10 @@
 
         NUM {
             bindings = <
-&kp LWIN      &kp LALT      &kp LCTRL     &kp LSHFT     &none                     &kp BACKSPACE  &none      &none   &none      &kp PERIOD
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none      &none  &kp NUMBER_6   &kp N7     &kp N8  &kp N9     &kp N0
-&none         &none         &none         &none         &none   &none      &none  &plus          &kp MINUS  &aster  &kp SLASH  &kp ENTER
-&none         &none         &none         &none         &none   &none      &none  &kp SPACE                                    &none
+&L_HRM LWIN F1  &L_HRM LALT F2  &L_HRM LCTRL F3  &L_HRM LSHFT F4  &kp F5                    &kp F6         &kp F7  &kp F8     &kp F9      &kp F10
+&kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4     &kp N5  &none      &none  &kp NUMBER_6   &kp N7  &kp N8     &kp N9      &kp N0
+&kp F11         &kp F12         &aster           &kp SLASH        &none   &none      &none  &kp BACKSPACE  &plus   &kp MINUS  &kp PERIOD  &kp ENTER
+&none           &none           &none            &none            &none   &none      &none  &kp SPACE                                     &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
