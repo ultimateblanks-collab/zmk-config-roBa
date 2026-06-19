@@ -957,8 +957,8 @@
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHFT R       &kp T                                                                                 &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
 &kp A          &kp S            &kp D           &kp F                &kp G           &athutt                              &kp K_CONTEXT_MENU               &kp H                    &AML_LS 3 J     &MLSP 1 K       &AML_LS 2 L         &mius
-&kp Z          &kp X            &kp C           &kp V                &kp B           &hussexc                             &kp PRINTSCREEN                  &kp N                    &kp M           &cosq           &perdq              &kp ENTER
-&anpas         &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 3 LEFT_ALT  &L_THUMB 4 TAB  &THUMB_NORMAL LEFT_SHIFT DELETE      &THUMB_NORMAL RIGHT_SHIFT SPACE  &R_THUMB_BS 2 BACKSPACE                                                      &kp SLASH
+&kp Z          &kp X            &kp C           &kp V                &kp B           &hussexc                             &kp PRINTSCREEN                  &kp N                    &kp M           &cosq           &perdq              &kp SLASH
+&anpas         &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 4 LEFT_ALT  &L_THUMB 3 TAB  &THUMB_NORMAL LEFT_SHIFT DELETE      &THUMB_NORMAL RIGHT_SHIFT SPACE  &R_THUMB_BS 2 BACKSPACE                                                      &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
@@ -975,19 +975,19 @@
 
         ARROW {
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                        &C_W       &ctpgup   &kp UP_ARROW    &ctpgdn    &none
-&dq               &sq                         &lk                &rk                &aster    &none      &none  &sk LSHFT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp GRAVE
-&us               &pl                         &syounari          &dainari           &percent  &none      &none  &none      &altesc   &none           &saltesc   &wintab
-&dollar           &kp INTERNATIONAL_3         &kp SLASH          &smaller           &larger   &none      &none  &none                                           &none
+&L_HRM LWIN F6  &L_HRM LEFT_ALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                    &none  &ctpgup        &kp TAB     &ctpgdn    &none
+&kp F1          &kp F2              &kp F3           &kp F4           &kp F5   &none      &none  &none  &kp BACKSPACE  &kp SPACE   &kp ENTER  &kp GRAVE
+&sk LSHFT       &C_W                &none            &kp F11          &kp F12  &none      &none  &none  &altesc        &kp DELETE  &saltesc   &wintab
+&none           &none               &none            &none            &none    &none      &none  &none                                        &none
             >;
         };
 
         NUM {
             bindings = <
-&L_HRM LWIN F1  &L_HRM LALT F4  &L_HRM LCTRL F7  &L_HRM LSHFT F10  &kp F13                      &plus          &kp N7        &kp N8        &kp N9        &kp PERIOD
-&kp F2          &kp F5          &kp F8           &kp F11           &kp F14  &none      &none    &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&kp F3          &kp F6          &kp F9           &kp F12           &kp F15  &none      &none    &aster         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&none           &none           &none            &none             &none    &none      &kp TAB  &kp BACKSPACE                                            &kp SLASH
+&L_HRM LWIN F6  &L_HRM LALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                      &plus          &kp N7        &kp N8        &kp N9        &kp PERIOD
+&kp F1          &kp F2          &kp F3           &kp F4           &kp F5   &none      &none    &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&sk LSHFT       &C_W            &none            &kp F11          &kp F12  &none      &none    &aster         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+&none           &none           &none            &none            &none    &none      &kp TAB  &kp BACKSPACE                                            &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -995,10 +995,10 @@
 
         FUNC {
             bindings = <
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                      &none      &kp RSHFT           &kp RCTRL   &kp RIGHT_ALT  &kp RWIN
-&none         &none         &none      &none      &none  &none      &none    &kp PG_UP  &kp K_CONTEXT_MENU  &winshiftS  &altprsc       &kp PAGE_DOWN
-&none         &none         &none      &none      &none  &none      &none    &none      &none               &none       &none          &none
-&none         &none         &none      &none      &none  &none      &evalue  &calte                                                    &none
+&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RIGHT_BRACKET  &L_HRM LSHFT NUHS  &kp INTERNATIONAL_3                      &none     &ctpgup   &kp UP_ARROW    &ctpgdn    &kp RWIN
+&dq               &sq                         &lk                         &rk                &anp                 &none      &none    &kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END
+&us               &pl                         &syounari                   &dainari           &dollar              &none      &none    &none     &altesc   &none           &saltesc   &none
+&none             &none                       &none                       &none              &none                &none      &evalue  &calte                                         &none
             >;
         };
 
