@@ -47,7 +47,7 @@
 
         to_SL {
             bindings = <&SL_SP 5 0>;
-            key-positions = <19 20>;
+            key-positions = <31 32>;
         };
 
         inputMODE {
