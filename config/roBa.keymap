@@ -318,6 +318,20 @@
             hold-trigger-key-positions = <2 1 3 11 12 23 10 14 13 25 24 38 18 7 19 20 30 31 32 8 6 21 17 5>;
             hold-trigger-on-release;
         };
+
+        ALCL: ALCL {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ALCL";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT>, <&kp LCTRL>;
+        };
+
+        DQSQ: DQSQ {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DQSQ";
+            #binding-cells = <0>;
+            bindings = <&dq>, <&sq>;
+        };
     };
 
     macros {
@@ -895,10 +909,10 @@
 
         default_layer {
             bindings = <
-&L_HRM LWIN Q     &L_HRM LEFT_ALT W  &L_HRM LCTRL E  &L_HRM LSHFT R        &kp T                                            &kp Y           &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
-&kp A             &kp S              &kp D           &kp F                 &kp G              &ctrlW        &menuTD         &kp H           &kp J           &kp K           &kp L               &hius
-&mt LEFT_SHIFT Z  &kp X              &kp C           &kp V                 &kp B              &ctrlT        &prscTD         &kp N           &kp M           &mkp MB1        &SPL5 5 MB2         &slpl
-&cosdq            &kp LEFT_WIN       &kp LWIN        &THUMB_MO 3 LEFT_ALT  &THUMB_MO 4 LCTRL  &kp SEMI      &kp APOSTROPHE  &RT_SP 2 SPACE                                                      &perisq
+&L_HRM LWIN Q     &L_HRM LEFT_ALT W  &L_HRM LCTRL E  &L_HRM LSHFT R     &kp T                                    &kp Y           &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RWIN P
+&kp A             &kp S              &kp D           &kp F              &kp G               &ctrlW      &menuTD  &kp H           &kp J           &kp K           &kp L               &hius
+&mt LEFT_SHIFT Z  &kp X              &kp C           &kp V              &kp B               &ctrlT      &prscTD  &kp N           &kp M           &mkp MB1        &SPL5 5 MB2         &slpl
+&cosdq            &kp SEMICOLON      &kp APOSTROPHE  &THUMB_MO 4 COMMA  &THUMB_MO 3 PERIOD  &ALCL       &DQSQ    &RT_SP 2 SPACE                                                      &perisq
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -944,10 +958,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&none  &none  &none  &none  &none                    &none  &none     &none     &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none     &none     &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB4  &mkp MB4  &none  &mkp MB5
+&none  &none  &none  &none  &none  &none      &none  &none                             &none
             >;
         };
 
